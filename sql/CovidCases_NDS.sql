@@ -17,14 +17,14 @@ create table PublicHealthUnit(
 
 
 CREATE TABLE CovidCases(
-	Case_id Int Not Null Identity(1,1),
-	Age_group VarChar(20),
-	Date_id Date,
-	Gender Char(1),
-	Exposure VarChar(20), --Exposure + CaseAcquisitionInfo
-	Case_status VarChar(20), --Fatal = Deceased, Active = Not Resolve, Recover = Resolved, Not Reported (outcome = case status)
+	Case_id			Int Not Null Identity(1,1),
+	Age_group		VarChar(20),	--WHERE
+	Date_id			Date,			--WHERE
+	Gender			Char(1),		--WHERE
+	Exposure		VarChar(20),		--Exposure + CaseAcquisitionInfo
+	Case_status		VarChar(20),		--Fatal = Deceased, Active = Not Resolve, Recover = Resolved, Not Reported (outcome = case status)
 	OutbreakRelated Bit,
-	PHU_ID Char(4),
+	PHU_ID			Char(4),		--WHERE
 	CONSTRAINT PK_CovidCases PRIMARY KEY(Case_id),
 	CONSTRAINT FK_CC_PHU FOREIGN KEY(PHU_ID) REFERENCES PublicHealthUnit
 )
