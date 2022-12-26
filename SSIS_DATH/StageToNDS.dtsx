@@ -1,0 +1,1459 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/26/2022 3:16:23 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-V6HNNLJ"
+  DTS:CreatorName="DESKTOP-V6HNNLJ\18120"
+  DTS:DTSID="{7A64C8F7-97DD-44F0-A83E-263EE9DAB663}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.948.0"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="23"
+  DTS:VersionGUID="{E3EC36C2-FA24-4E3A-975D-988047004BC3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.CovidCases]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{417DFE40-BA0B-4501-9F07-4877618E47AF}"
+      DTS:ObjectName="localhost.CovidCases">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=CovidCases;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{417DFE40-BA0B-4501-9F07-4877618E47AF}localhost.CovidCases;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.CovidCases 1]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{A7BE1BE9-31DD-4753-8524-350A45AF0177}"
+      DTS:ObjectName="localhost.CovidCases 1">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=CovidCases;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{A7BE1BE9-31DD-4753-8524-350A45AF0177}localhost.CovidCases 1;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.CovidCases_NDS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{3B99C41A-0ED6-42DA-AB96-CC25C0F94260}"
+      DTS:ObjectName="localhost.CovidCases_NDS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=CovidCases_NDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{3B99C41A-0ED6-42DA-AB96-CC25C0F94260}localhost.CovidCases_NDS;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.NDS]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{FD815181-5D6C-40ED-A4FA-4837CF9C1150}"
+      DTS:ObjectName="localhost.NDS">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=NDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{FD815181-5D6C-40ED-A4FA-4837CF9C1150}localhost.NDS;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[localhost.Stage]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{BA9B698C-4293-4399-937A-100DC2D35493}"
+      DTS:ObjectName="localhost.Stage">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="1"
+          DTS:ConnectRetryInterval="5"
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=Stage;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{BA9B698C-4293-4399-937A-100DC2D35493}localhost.Stage;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\PublicHealthUnit_Ontario to PHU"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{3BAF3E49-AD69-44A1-9A8F-6C34C795B35E}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="PublicHealthUnit_Ontario to PHU"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add col PHU_Create, PHU_Update"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Output].Columns[PHU_Create]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Output].Columns[PHU_Create]"
+                      name="PHU_Create"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Output].Columns[PHU_Update]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Output].Columns[PHU_Update]"
+                      name="PHU_Update"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Add col PHU_Update"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Output].Columns[PHU_Update]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Output].Columns[PHU_Update]"
+                      name="PHU_Update"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">[GETDATE]()</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">GETDATE()</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="Insert data into NDS"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[PublicHealthUnit]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">0</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.CovidCases_NDS]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.CovidCases_NDS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[PHU_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="PHU_ID"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_ID]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[PHU_ID]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[PHU_Group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PHU_Group"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Group]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[PHU_Group]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[Reporting_PHU_Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Reporting_PHU_Address"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Address]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Address]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[Reporting_PHU_City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Reporting_PHU_City"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_City]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_City]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[Reporting_PHU_Postal_Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Reporting_PHU_Postal_Code"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Postal_Code]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Postal_Code]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[Reporting_PHU_Website]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="Reporting_PHU_Website"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Website]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Website]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[Reporting_PHU_Latitude]"
+                      cachedDataType="r8"
+                      cachedName="Reporting_PHU_Latitude"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Latitude]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Latitude]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[Reporting_PHU_Longitude]"
+                      cachedDataType="r8"
+                      cachedName="Reporting_PHU_Longitude"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Longitude]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Longitude]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[Reporting_PHU]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="Reporting_PHU"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="PHU_ID" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="PHU" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU_Address" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU_City" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Postal_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="PHU_Postal_Code" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU_Group" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Website]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="PHU_Website" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Latitude]"
+                      dataType="r8"
+                      name="PHU_Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[PHU_Longitude]"
+                      dataType="r8"
+                      name="PHU_Longitude" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario"
+              componentClassID="Microsoft.OLEDBSource"
+              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
+              description="OLE DB Source"
+              name="Load data PublicHealthUnit_Ontario"
+              usesDispositions="true"
+              version="7">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[dbo].[PublicHealthUnit_Ontario]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select o.*, PHU_Group
+from PHUGroups g, PublicHealthUnit_Ontario o
+where g.PHU_region = o.Reporting_PHU</property>
+                <property
+                  dataType="System.String"
+                  description="The variable that contains the SQL command to be executed."
+                  name="SqlCommandVariable"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">2</property>
+                <property
+                  dataType="System.String"
+                  description="The mappings between the parameters in the SQL command and variables."
+                  name="ParameterMapping"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.CovidCases]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.CovidCases]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output]"
+                  name="OLE DB Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[PHU_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[PHU_ID]"
+                      length="4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[PHU_ID]"
+                      name="PHU_ID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU]"
+                      length="60"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU]"
+                      name="Reporting_PHU"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Address]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Address]"
+                      length="50"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Address]"
+                      name="Reporting_PHU_Address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_City]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_City]"
+                      length="50"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_City]"
+                      name="Reporting_PHU_City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Postal_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Postal_Code]"
+                      length="10"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Postal_Code]"
+                      name="Reporting_PHU_Postal_Code"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Website]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Website]"
+                      length="60"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Website]"
+                      name="Reporting_PHU_Website"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Latitude]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Latitude]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Latitude]"
+                      name="Reporting_PHU_Latitude"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Longitude]"
+                      dataType="r8"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Longitude]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Longitude]"
+                      name="Reporting_PHU_Longitude"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[PHU_Group]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[PHU_Group]"
+                      length="50"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[PHU_Group]"
+                      name="PHU_Group"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[PHU_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="PHU_ID" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="Reporting_PHU" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Reporting_PHU_Address" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Reporting_PHU_City" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Postal_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Reporting_PHU_Postal_Code" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Website]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="Reporting_PHU_Website" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Latitude]"
+                      dataType="r8"
+                      name="Reporting_PHU_Latitude" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[Reporting_PHU_Longitude]"
+                      dataType="r8"
+                      name="Reporting_PHU_Longitude" />
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].ExternalColumns[PHU_Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="PHU_Group" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output]"
+                  isErrorOut="true"
+                  name="OLE DB Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[PHU_Group]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[PHU_Group]"
+                      name="PHU_Group" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[PHU_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[PHU_ID]"
+                      name="PHU_ID" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU]"
+                      name="Reporting_PHU" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Address]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Address]"
+                      name="Reporting_PHU_Address" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_City]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_City]"
+                      name="Reporting_PHU_City" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Postal_Code]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Postal_Code]"
+                      name="Reporting_PHU_Postal_Code" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Website]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Website]"
+                      name="Reporting_PHU_Website" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Latitude]"
+                      dataType="r8"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Latitude]"
+                      name="Reporting_PHU_Latitude" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Longitude]"
+                      dataType="r8"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[Reporting_PHU_Longitude]"
+                      name="Reporting_PHU_Longitude" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Reporting_PHU of Stage is exists in NDS ?"
+              usesDispositions="true"
+              version="6">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select PHU from PublicHealthUnit</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select PHU from PublicHealthUnit) [refTable]
+where [refTable].[PHU] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="PHU" dataType="DT_STR" length="60" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU]};</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.CovidCases_NDS]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.CovidCases_NDS]"
+                  description="Connection manager used to access lookup data."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input]"
+                  name="Lookup Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input].Columns[Reporting_PHU]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="Reporting_PHU"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">PHU</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="RedirectRow"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[PHU_NDS]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="60"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[PHU_NDS]"
+                      name="PHU_NDS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">PHU</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\PublicHealthUnit_Ontario to PHU\Update data"
+              componentClassID="Microsoft.OLEDBCommand"
+              contactInfo="OLE DB Command;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+              description="Runs an SQL statement for each row in a data flow. For example, call a 'new employee setup' stored procedure for each row in the 'new employees' table. Note: running an SQL statement for each row of a large data flow may take a long time."
+              name="Update data"
+              usesDispositions="true"
+              version="2">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">update PublicHealthUnit set PHU_ID = ?, PHU_Address = ?, PHU_City = ?, PHU_Postal_Code = ?, PHU_Group = ?, PHU_Website = ?, PHU_Latitude = ?, PHU_Longitude = ? where PHU = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[localhost.CovidCases_NDS]"
+                  connectionManagerRefId="Package.ConnectionManagers[localhost.CovidCases_NDS]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input]"
+                  errorOrTruncationOperation="Command Execution"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Command Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[PHU_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="PHU_ID"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[PHU_ID]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[Reporting_PHU_Address]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Reporting_PHU_Address"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Address]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[Reporting_PHU_City]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Reporting_PHU_City"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_City]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[Reporting_PHU_Postal_Code]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="Reporting_PHU_Postal_Code"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Postal_Code]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[PHU_Group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PHU_Group"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[PHU_Group]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[Reporting_PHU_Website]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="Reporting_PHU_Website"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Website]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[Reporting_PHU_Latitude]"
+                      cachedDataType="r8"
+                      cachedName="Reporting_PHU_Latitude"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Latitude]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[Reporting_PHU_Longitude]"
+                      cachedDataType="r8"
+                      cachedName="Reporting_PHU_Longitude"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output].Columns[Reporting_PHU_Longitude]" />
+                    <inputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].Columns[PHU_NDS]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="60"
+                      cachedName="PHU_NDS"
+                      externalMetadataColumnId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[PHU_NDS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      codePage="1252"
+                      dataType="str"
+                      length="4"
+                      name="Param_0">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Param_1">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Param_2">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="10"
+                      name="Param_3">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="Param_4">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="Param_5">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
+                      dataType="r8"
+                      name="Param_6">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
+                      dataType="r8"
+                      name="Param_7">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">81</property>
+                      </properties>
+                    </externalMetadataColumn>
+                    <externalMetadataColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_8]"
+                      codePage="1252"
+                      dataType="str"
+                      length="60"
+                      name="Param_8">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
+                          name="DBParamInfoFlags">65</property>
+                      </properties>
+                    </externalMetadataColumn>
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Outputs[OLE DB Command Output]"
+                  exclusionGroup="1"
+                  name="OLE DB Command Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Outputs[OLE DB Command Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Command Error Output"
+                  synchronousInputId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Update data.Outputs[OLE DB Command Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\PublicHealthUnit_Ontario to PHU\Update data.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\PublicHealthUnit_Ontario to PHU\Update data.Outputs[OLE DB Command Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\PublicHealthUnit_Ontario to PHU.Paths[Derived Column Output]"
+              endId="Package\PublicHealthUnit_Ontario to PHU\Update data.Inputs[OLE DB Command Input]"
+              name="Derived Column Output"
+              startId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\PublicHealthUnit_Ontario to PHU.Paths[Derived Column Output1]"
+              endId="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\PublicHealthUnit_Ontario to PHU.Paths[Lookup Error Output]"
+              endId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update.Inputs[Derived Column Input]"
+              name="Lookup Error Output"
+              startId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Error Output]" />
+            <path
+              refId="Package\PublicHealthUnit_Ontario to PHU.Paths[Lookup Match Output]"
+              endId="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update.Inputs[Derived Column Input]"
+              name="Lookup Match Output"
+              startId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output]" />
+            <path
+              refId="Package\PublicHealthUnit_Ontario to PHU.Paths[OLE DB Source Output]"
+              endId="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input]"
+              name="OLE DB Source Output"
+              startId="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario.Outputs[OLE DB Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="232,42"
+          Id="Package\PublicHealthUnit_Ontario to PHU"
+          TopLeft="188,92" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\PublicHealthUnit_Ontario to PHU">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="277,42"
+          Id="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?"
+          TopLeft="98,176" />
+        <NodeLayout
+          Size="176,42"
+          Id="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Update"
+          TopLeft="98,278" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\PublicHealthUnit_Ontario to PHU\Update data"
+          TopLeft="113.530303067556,366.69444438633" />
+        <NodeLayout
+          Size="246,42"
+          Id="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario"
+          TopLeft="111,87" />
+        <NodeLayout
+          Size="175,42"
+          Id="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS"
+          TopLeft="359.374995911494,352.816666538813" />
+        <NodeLayout
+          Size="240,42"
+          Id="Package\PublicHealthUnit_Ontario to PHU\Add col PHU_Create, PHU_Update"
+          TopLeft="330.121212195718,277.073232265117" />
+        <EdgeLayout
+          Id="Package\PublicHealthUnit_Ontario to PHU.Paths[OLE DB Source Output]"
+          TopLeft="235.25,129">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,47"
+              Start="0,0"
+              End="0,39.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PublicHealthUnit_Ontario to PHU.Paths[Lookup Match Output]"
+          TopLeft="188.833333333333,218">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-48.19138671875,20.4453125,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PublicHealthUnit_Ontario to PHU.Paths[Lookup Error Output]"
+          TopLeft="281.333333333333,218">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="168.787878862385,59.073232265117"
+              Start="0,0"
+              End="168.787878862385,51.573232265117">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,19.8328474752303" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,19.8328474752303"
+                    Point2="0,23.8328474752303"
+                    Point3="4,23.8328474752303" />
+                  <mssgle:LineSegment
+                    End="164.787878862385,23.8328474752303" />
+                  <mssgle:CubicBezierSegment
+                    Point1="164.787878862385,23.8328474752303"
+                    Point2="168.787878862385,23.8328474752303"
+                    Point3="168.787878862385,27.8328474752303" />
+                  <mssgle:LineSegment
+                    End="168.787878862385,51.573232265117" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="38.5275527124425,28.8328474752303,91.7327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PublicHealthUnit_Ontario to PHU.Paths[Derived Column Output1]"
+          TopLeft="448.498104053606,319.073232265117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,33.743434273696"
+              Start="0,0"
+              End="0,26.243434273696">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,26.243434273696" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PublicHealthUnit_Ontario to PHU.Paths[Derived Column Output]"
+          TopLeft="184.015151533778,320">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,46.69444438633"
+              Start="0,0"
+              End="0,39.19444438633">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,39.19444438633" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PublicHealthUnit_Ontario to PHU\Reporting_PHU of Stage is exists in NDS ?">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:string">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:string">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PublicHealthUnit_Ontario to PHU\Load data PublicHealthUnit_Ontario">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PublicHealthUnit_Ontario to PHU\Insert data into NDS">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
