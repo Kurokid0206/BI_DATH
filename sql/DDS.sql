@@ -51,10 +51,11 @@ CREATE TABLE OutBreak(
 )
 
 CREATE TABLE FactVaccinated(
+	ROW_ID INT NOT NULL Identity(1,1),
 	PHU_ID char(4),
 	DateKey Date,
 	SeverityKey INT,
-	CONSTRAINT PK_FactVaccinated PRIMARY KEY(PHU_ID, DateKey, SeverityKey),
+	CONSTRAINT PK_FactVaccinated PRIMARY KEY(ROW_ID),
 	CONSTRAINT FK_FactVaccinated_PHU FOREIGN KEY(PHU_ID) REFERENCES PublicHealthUnit(PHU_ID),
 	CONSTRAINT FK_FactVaccinated_Date FOREIGN KEY(DateKey) REFERENCES DimDate(DateKey),
 	CONSTRAINT FK_FactVaccinated_Severity FOREIGN KEY(SeverityKey) REFERENCES Severity(SeverityKey)
