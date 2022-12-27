@@ -60,3 +60,21 @@ CREATE TABLE FactVaccinated(
 	CONSTRAINT FK_FactVaccinated_Date FOREIGN KEY(DateKey) REFERENCES DimDate(DateKey),
 	CONSTRAINT FK_FactVaccinated_Severity FOREIGN KEY(SeverityKey) REFERENCES Severity(SeverityKey)
 )
+CREATE TABLE FactInfected(
+  Row_ID int,
+  DateKey Date,
+  GenderKey int,
+  AgeGroupKey int,
+  SeverityKey int,
+  PHU_ID char(4),
+  CaseStatusID int,
+  Case_Count int,
+  
+  CONSTRAINT FK_DimDate FOREIGN KEY(DateKey) REFERENCES DimDate,
+  CONSTRAINT FK_DimGender FOREIGN KEY(GenderKey) REFERENCES DimGender,
+  CONSTRAINT FK_DimAgeGroup FOREIGN KEY(AgeGroupKey) REFERENCES DimAgeGroup,
+  CONSTRAINT FK_Severity FOREIGN KEY(SeverityKey) REFERENCES Severity,
+  CONSTRAINT FK_PublicHealthUnit FOREIGN KEY(PHU_ID) REFERENCES PublicHealthUnit,
+  CONSTRAINT FK_CaseStatus FOREIGN KEY(CaseStatusID) REFERENCES CaseStatus,
+  
+)
