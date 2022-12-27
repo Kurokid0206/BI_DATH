@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{28E8CD12-3FD6-4F44-9979-BF9EDA0F4A5C}">
+  DTS:VersionBuild="53"
+  DTS:VersionGUID="{5A948117-5D67-4184-9609-6DC1D9EAC485}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -238,88 +238,6 @@
               </outputs>
             </component>
             <component
-              refId="Package\CaseDetails_Canada to CovidCases\Derived Column"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\CaseDetails_Canada to CovidCases\Derived Column.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column.Inputs[Derived Column Input].Columns[exposure]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="exposure"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[exposure]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\CaseDetails_Canada to CovidCases\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Output].Columns[Outbreak_related]"
-                      dataType="bool"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Output].Columns[Outbreak_related]"
-                      name="Outbreak_related"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_BOOL)(#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[exposure]} == "Outbreak" ? 1 : 0)</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_BOOL)(exposure == "Outbreak" ? 1 : 0)</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\CaseDetails_Canada to CovidCases\Derived Column.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
               refId="Package\CaseDetails_Canada to CovidCases\Derived Column 1"
               componentClassID="Microsoft.DerivedColumn"
               contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
@@ -339,6 +257,20 @@
                       cachedLength="6"
                       cachedName="gender"
                       lineageId="Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[gender]" />
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Inputs[Derived Column Input].Columns[exposure]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="exposure"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[exposure]" />
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Inputs[Derived Column Input].Columns[age_group]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="10"
+                      cachedName="age_group"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[age_group]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -375,6 +307,52 @@
                           name="FriendlyExpression">(DT_STR,1,1252)SUBSTRING(gender,1,1)</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[Outbreak_related]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[Outbreak_related]"
+                      name="Outbreak_related"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_BOOL)(#{Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[exposure]} == "Outbreak" ? 1 : 0)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_BOOL)(exposure == "Outbreak" ? 1 : 0)</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[AgeGroup]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="20"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[AgeGroup]"
+                      name="AgeGroup"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_STR,20,1252)(#{Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[age_group]} == "Not Report" ? "Not Reported" : #{Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[age_group]})</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_STR,20,1252)(age_group == "Not Report" ? "Not Reported" : age_group)</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -396,90 +374,6 @@
                       refId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       dataType="i4"
                       lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\CaseDetails_Canada to CovidCases\Derived Column 2"
-              componentClassID="Microsoft.DerivedColumn"
-              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
-              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
-              name="Derived Column 2"
-              usesDispositions="true">
-              <inputs>
-                <input
-                  refId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Inputs[Derived Column Input]"
-                  description="Input to the Derived Column Transformation"
-                  name="Derived Column Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Inputs[Derived Column Input].Columns[age_group]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="age_group"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[age_group]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Output]"
-                  description="Default Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  name="Derived Column Output"
-                  synchronousInputId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Output].Columns[AgeGroup]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Computation"
-                      errorRowDisposition="FailComponent"
-                      length="20"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Output].Columns[AgeGroup]"
-                      name="AgeGroup"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Expression"
-                          name="Expression">(DT_STR,20,1252)(#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[age_group]} == "Not Report" ? "Not Reported" : #{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[age_group]})</property>
-                        <property
-                          containsID="true"
-                          dataType="System.String"
-                          description="Derived Column Friendly Expression"
-                          expressionType="Notify"
-                          name="FriendlyExpression">(DT_STR,20,1252)(age_group == "Not Report" ? "Not Reported" : age_group)</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-                <output
-                  refId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Error Output]"
-                  description="Error Output of the Derived Column Transformation"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="Derived Column Error Output"
-                  synchronousInputId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Inputs[Derived Column Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -894,7 +788,7 @@
                       cachedDataType="bool"
                       cachedName="Outbreak_related"
                       externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[OutbreakRelated]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Output].Columns[Outbreak_related]" />
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[Outbreak_related]" />
                     <inputColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Insert data into NDS.Inputs[OLE DB Destination Input].Columns[AgeGroup]"
                       cachedCodepage="1252"
@@ -902,7 +796,7 @@
                       cachedLength="20"
                       cachedName="AgeGroup"
                       externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[Age_group]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Output].Columns[AgeGroup]" />
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[AgeGroup]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -930,7 +824,7 @@
                       refId="Package\CaseDetails_Canada to CovidCases\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[Gender]"
                       codePage="1252"
                       dataType="str"
-                      length="1"
+                      length="20"
                       name="Gender" />
                     <externalMetadataColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Insert data into NDS.Inputs[OLE DB Destination Input].ExternalColumns[Exposure]"
@@ -1296,20 +1190,6 @@ where province = 'Ontario'</property>
                       cachedName="date_reported"
                       lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[date_reported]" />
                     <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[age_group]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="age_group"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[age_group]" />
-                    <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[gender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="6"
-                      cachedName="gender"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[gender]" />
-                    <inputColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[exposure]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -1330,6 +1210,18 @@ where province = 'Ontario'</property>
                       cachedLength="1"
                       cachedName="short_gender"
                       lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[short_gender]" />
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[Outbreak_related]"
+                      cachedDataType="bool"
+                      cachedName="Outbreak_related"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[Outbreak_related]" />
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[AgeGroup]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="AgeGroup"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[AgeGroup]" />
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -1337,7 +1229,6 @@ where province = 'Ontario'</property>
               <outputs>
                 <output
                   refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output]"
-                  isSorted="true"
                   name="Merge Join Output">
                   <outputColumns>
                     <outputColumn
@@ -1379,52 +1270,6 @@ where province = 'Ontario'</property>
                           dataType="System.Int32"
                           description="The input column associated with this output column"
                           name="InputColumnID">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[date_reported]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[health_region]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[health_region]"
-                      name="health_region"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[health_region]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[age_group]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[age_group]"
-                      name="age_group">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[age_group]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[gender]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[gender]"
-                      name="gender">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[gender]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -1472,6 +1317,34 @@ where province = 'Ontario'</property>
                           name="InputColumnID">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[short_gender]}</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[Outbreak_related]"
+                      dataType="bool"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[Outbreak_related]"
+                      name="Outbreak_related">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[Outbreak_related]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[AgeGroup]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[AgeGroup]"
+                      name="AgeGroup">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Inputs[Merge Join Right Input].Columns[AgeGroup]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -1491,14 +1364,14 @@ where province = 'Ontario'</property>
                   description="Specifies the SQL statement that generates the lookup table."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select Case_id from CovidCases</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from [dbo].[CovidCases]</property>
                 <property
                   dataType="System.String"
                   description="Specifies a SQL statement that uses parameters to generate the lookup table."
                   expressionType="Notify"
                   name="SqlCommandParam"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select Case_id from CovidCases) [refTable]
-where [refTable].[Case_id] = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[CovidCases]) [refTable]
+where [refTable].[PHU_ID] = ? and [refTable].[Date_id] = ? and [refTable].[Exposure] = ? and [refTable].[Gender] = ? and [refTable].[OutbreakRelated] = ? and [refTable].[Age_group] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -1529,12 +1402,12 @@ where [refTable].[Case_id] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Case_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Case_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Age_group" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Date_id" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Gender" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Exposure" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Case_status" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="OutbreakRelated" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PHU_ID" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[ObjectId]};</property>
+                  name="ParameterMap">#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[PHU_ID]};#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[date_reported]};#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[exposure]};#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[short_gender]};#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[Outbreak_related]};#{Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[AgeGroup]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -1558,15 +1431,103 @@ where [refTable].[Case_id] = ?</property>
                   name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input].Columns[ObjectId]"
-                      cachedDataType="i4"
-                      cachedName="ObjectId"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[ObjectId]">
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input].Columns[PHU_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="PHU_ID"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[PHU_ID]">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table that a column joins."
-                          name="JoinToReferenceColumn">Case_id</property>
+                          name="JoinToReferenceColumn">PHU_ID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input].Columns[AgeGroup]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="AgeGroup"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[AgeGroup]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Age_group</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input].Columns[date_reported]"
+                      cachedDataType="dbDate"
+                      cachedName="date_reported"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[date_reported]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Date_id</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input].Columns[exposure]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="exposure"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[exposure]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Exposure</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input].Columns[short_gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="short_gender"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[short_gender]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Gender</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input].Columns[Outbreak_related]"
+                      cachedDataType="bool"
+                      cachedName="Outbreak_related"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[Outbreak_related]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">OutbreakRelated</property>
                         <property
                           dataType="System.Null"
                           description="Specifies the column in the reference table from which a column is copied."
@@ -1587,17 +1548,95 @@ where [refTable].[Case_id] = ?</property>
                   synchronousInputId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Case_id_NDS]"
-                      dataType="i4"
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Age_group]"
+                      codePage="1252"
+                      dataType="str"
                       errorOrTruncationOperation="Copy Column"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Case_id_NDS]"
-                      name="Case_id_NDS"
+                      length="20"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Age_group]"
+                      name="Age_group"
                       truncationRowDisposition="FailComponent">
                       <properties>
                         <property
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
-                          name="CopyFromReferenceColumn">Case_id</property>
+                          name="CopyFromReferenceColumn">Age_group</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Date_id]"
+                      dataType="dbDate"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Date_id]"
+                      name="Date_id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Date_id</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="20"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Gender</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Exposure]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="20"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[Exposure]"
+                      name="Exposure"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Exposure</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[OutbreakRelated]"
+                      dataType="bool"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[OutbreakRelated]"
+                      name="OutbreakRelated"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">OutbreakRelated</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[PHU_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="4"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output].Columns[PHU_ID]"
+                      name="PHU_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">PHU_ID</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -2037,42 +2076,6 @@ where [refTable].[Case_id] = ?</property>
                       </properties>
                     </inputColumn>
                     <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Inputs[Sort Input].Columns[age_group]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="10"
-                      cachedName="age_group"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[age_group]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Inputs[Sort Input].Columns[gender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="6"
-                      cachedName="gender"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[gender]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Inputs[Sort Input].Columns[exposure]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -2115,6 +2118,40 @@ where [refTable].[Case_id] = ?</property>
                       cachedLength="1"
                       cachedName="short_gender"
                       lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[short_gender]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Inputs[Sort Input].Columns[Outbreak_related]"
+                      cachedDataType="bool"
+                      cachedName="Outbreak_related"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[Outbreak_related]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Inputs[Sort Input].Columns[AgeGroup]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="AgeGroup"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[AgeGroup]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -2179,36 +2216,6 @@ where [refTable].[Case_id] = ?</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[age_group]"
-                      codePage="1252"
-                      dataType="str"
-                      length="10"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[age_group]"
-                      name="age_group">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[age_group]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[gender]"
-                      codePage="1252"
-                      dataType="str"
-                      length="6"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[gender]"
-                      name="gender">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada.Outputs[OLE DB Source Output].Columns[gender]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[exposure]"
                       codePage="1252"
                       dataType="str"
@@ -2253,6 +2260,34 @@ where [refTable].[Case_id] = ?</property>
                           name="SortColumnId">#{Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[short_gender]}</property>
                       </properties>
                     </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[Outbreak_related]"
+                      dataType="bool"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[Outbreak_related]"
+                      name="Outbreak_related">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[Outbreak_related]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[AgeGroup]"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Sort 1.Outputs[Sort Output].Columns[AgeGroup]"
+                      name="AgeGroup">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output].Columns[AgeGroup]}</property>
+                      </properties>
+                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -2276,7 +2311,7 @@ where [refTable].[Case_id] = ?</property>
                   description="The SQL command to be executed."
                   expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">update CovidCases set Age_group= ?, Date_id = ?, Gender = ?, Exposure = ?, Case_status = ?, OutbreakRelated = ?, PHU_ID = ? where Case_id = ?</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">update CovidCases set  Case_status = ? where Age_group= ? and Date_id = ? and Gender = ? and Exposure = ? and OutbreakRelated = ? and PHU_ID = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -2299,34 +2334,6 @@ where [refTable].[Case_id] = ?</property>
                   name="OLE DB Command Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[date_reported]"
-                      cachedDataType="dbDate"
-                      cachedName="date_reported"
-                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[date_reported]" />
-                    <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[exposure]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="exposure"
-                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[exposure]" />
-                    <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[case_status]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="20"
-                      cachedName="case_status"
-                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[case_status]" />
-                    <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[ObjectId]"
-                      cachedDataType="i4"
-                      cachedName="ObjectId"
-                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[ObjectId]" />
-                    <inputColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[PHU_ID]"
                       cachedCodepage="1252"
                       cachedDataType="str"
@@ -2335,27 +2342,49 @@ where [refTable].[Case_id] = ?</property>
                       externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_6]"
                       lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[PHU_ID]" />
                     <inputColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[short_gender]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="1"
-                      cachedName="short_gender"
-                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[short_gender]" />
-                    <inputColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[Outbreak_related]"
                       cachedDataType="bool"
                       cachedName="Outbreak_related"
                       externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_5]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Output].Columns[Outbreak_related]" />
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[Outbreak_related]" />
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[case_status]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="case_status"
+                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[case_status]" />
                     <inputColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[AgeGroup]"
                       cachedCodepage="1252"
                       cachedDataType="str"
                       cachedLength="20"
                       cachedName="AgeGroup"
-                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_0]"
-                      lineageId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Output].Columns[AgeGroup]" />
+                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[AgeGroup]" />
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[date_reported]"
+                      cachedDataType="dbDate"
+                      cachedName="date_reported"
+                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[date_reported]" />
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[short_gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="short_gender"
+                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[short_gender]" />
+                    <inputColumn
+                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].Columns[exposure]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="exposure"
+                      externalMetadataColumnId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_4]"
+                      lineageId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output].Columns[exposure]" />
                   </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
@@ -2374,7 +2403,9 @@ where [refTable].[Case_id] = ?</property>
                     </externalMetadataColumn>
                     <externalMetadataColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_1]"
-                      dataType="dbDate"
+                      codePage="1252"
+                      dataType="str"
+                      length="20"
                       name="Param_1">
                       <properties>
                         <property
@@ -2385,9 +2416,7 @@ where [refTable].[Case_id] = ?</property>
                     </externalMetadataColumn>
                     <externalMetadataColumn
                       refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_2]"
-                      codePage="1252"
-                      dataType="str"
-                      length="1"
+                      dataType="dbDate"
                       name="Param_2">
                       <properties>
                         <property
@@ -2446,17 +2475,6 @@ where [refTable].[Case_id] = ?</property>
                           name="DBParamInfoFlags">65</property>
                       </properties>
                     </externalMetadataColumn>
-                    <externalMetadataColumn
-                      refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_7]"
-                      dataType="i4"
-                      name="Param_7">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Parameter information.  Matches OLE DB's DBPARAMFLAGSENUM values."
-                          name="DBParamInfoFlags">81</property>
-                      </properties>
-                    </externalMetadataColumn>
                   </externalMetadataColumns>
                 </input>
               </inputs>
@@ -2510,16 +2528,6 @@ where [refTable].[Case_id] = ?</property>
               name="Derived Column Output"
               startId="Package\CaseDetails_Canada to CovidCases\Derived Column 1.Outputs[Derived Column Output]" />
             <path
-              refId="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output3]"
-              endId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Inputs[Derived Column Input]"
-              name="Derived Column Output"
-              startId="Package\CaseDetails_Canada to CovidCases\Derived Column.Outputs[Derived Column Output]" />
-            <path
-              refId="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output4]"
-              endId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input]"
-              name="Derived Column Output"
-              startId="Package\CaseDetails_Canada to CovidCases\Derived Column 2.Outputs[Derived Column Output]" />
-            <path
               refId="Package\CaseDetails_Canada to CovidCases.Paths[Lookup Error Output]"
               endId="Package\CaseDetails_Canada to CovidCases\Add col Cases_Create, Cases_Update.Inputs[Derived Column Input]"
               name="Lookup Error Output"
@@ -2531,7 +2539,7 @@ where [refTable].[Case_id] = ?</property>
               startId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Outputs[Lookup Match Output]" />
             <path
               refId="Package\CaseDetails_Canada to CovidCases.Paths[Merge Join Output]"
-              endId="Package\CaseDetails_Canada to CovidCases\Derived Column.Inputs[Derived Column Input]"
+              endId="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?.Inputs[Lookup Input]"
               name="Merge Join Output"
               startId="Package\CaseDetails_Canada to CovidCases\Merge Join.Outputs[Merge Join Output]" />
             <path
@@ -6597,10 +6605,6 @@ where [refTable].[PHU] = ?</property>
           Id="Package\CaseDetails_Canada to CovidCases\Add col Cases_Update"
           TopLeft="276,420" />
         <NodeLayout
-          Size="154.666666666667,42.6666666666667"
-          Id="Package\CaseDetails_Canada to CovidCases\Derived Column"
-          TopLeft="352.5,195.924398625429" />
-        <NodeLayout
           Size="137.333333333334,42.6666666666667"
           Id="Package\CaseDetails_Canada to CovidCases\Update data"
           TopLeft="269,509.333333333333" />
@@ -6624,10 +6628,6 @@ where [refTable].[PHU] = ?</property>
           Size="277.333333333334,42.6666666666667"
           Id="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?"
           TopLeft="364,323.333333333333" />
-        <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\CaseDetails_Canada to CovidCases\Derived Column 2"
-          TopLeft="626,216.666666666667" />
         <NodeLayout
           Size="120,42.6666666666667"
           Id="Package\CaseDetails_Canada to CovidCases\Get PHU"
@@ -6767,28 +6767,6 @@ where [refTable].[PHU] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\CaseDetails_Canada to CovidCases.Paths[Merge Join Output]"
-          TopLeft="431.75,164.333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,31.5910652920961"
-              Start="0,0"
-              End="0,24.0910652920961">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,24.0910652920961" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
           Id="Package\CaseDetails_Canada to CovidCases.Paths[Lookup Match Output]"
           TopLeft="457.777777777778,366">
           <EdgeLayout.Curve>
@@ -6858,74 +6836,6 @@ where [refTable].[PHU] = ?</property>
             <mssgm:EdgeLabel
               BoundingBox="-3.91689173200221,26.4119541260797,91.7327734375,11.609375"
               RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output4]"
-          TopLeft="708,259.333333333334">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-205.333333333333,63.9999999999997"
-              Start="0,0"
-              End="-205.333333333333,56.4999999999997">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.9999999999999"
-                    Point2="0,31.9999999999999"
-                    Point3="-4,31.9999999999999" />
-                  <mssgle:LineSegment
-                    End="-201.333333333333,31.9999999999999" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-201.333333333333,31.9999999999999"
-                    Point2="-205.333333333333,31.9999999999999"
-                    Point3="-205.333333333333,35.9999999999999" />
-                  <mssgle:LineSegment
-                    End="-205.333333333333,56.4999999999997" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output3]"
-          TopLeft="507.166666666667,217.257731958763">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="118.833333333333,20.7422680412371"
-              Start="0,0"
-              End="111.333333333333,20.7422680412371">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="55.4166666666667,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="55.4166666666667,0"
-                    Point2="59.4166666666667,0"
-                    Point3="59.4166666666667,4" />
-                  <mssgle:LineSegment
-                    End="59.4166666666667,16.7422680412371" />
-                  <mssgle:CubicBezierSegment
-                    Point1="59.4166666666667,16.7422680412371"
-                    Point2="59.4166666666667,20.7422680412371"
-                    Point3="63.4166666666667,20.7422680412371" />
-                  <mssgle:LineSegment
-                    End="111.333333333333,20.7422680412371" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -7018,6 +6928,40 @@ where [refTable].[PHU] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CaseDetails_Canada to CovidCases.Paths[Merge Join Output]"
+          TopLeft="433.666666666667,164.333333333334">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="68.9999999999999,158.999999999999"
+              Start="0,0"
+              End="68.9999999999999,151.499999999999">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,75.4999999999996" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,75.4999999999996"
+                    Point2="0,79.4999999999996"
+                    Point3="4,79.4999999999996" />
+                  <mssgle:LineSegment
+                    End="64.9999999999999,79.4999999999996" />
+                  <mssgle:CubicBezierSegment
+                    Point1="64.9999999999999,79.4999999999996"
+                    Point2="68.9999999999999,79.4999999999996"
+                    Point3="68.9999999999999,83.4999999999996" />
+                  <mssgle:LineSegment
+                    End="68.9999999999999,151.499999999999" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
@@ -7048,17 +6992,17 @@ where [refTable].[PHU] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
         <Value
-          type="q3:string"></Value>
+          type="q3:string">[dbo].[CovidCases]</Value>
       </Property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7084,9 +7028,9 @@ where [refTable].[PHU] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="108,42.6666666666667"
-          Id="Package\Data Flow Task\Sort 1"
-          TopLeft="1028.50000242144,263.900000860095" />
+          Size="137.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Update data"
+          TopLeft="629.500002421439,510.233334193428" />
         <NodeLayout
           Size="120,42.6666666666667"
           Id="Package\Data Flow Task\Get PHU"
@@ -7096,9 +7040,13 @@ where [refTable].[PHU] = ?</property>
           Id="Package\Data Flow Task\Add col Cases_Update"
           TopLeft="636.500002421439,420.900000860095" />
         <NodeLayout
-          Size="137.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Update data"
-          TopLeft="629.500002421439,510.233334193428" />
+          Size="172,42.6666666666667"
+          Id="Package\Data Flow Task\OLE DB Destination"
+          TopLeft="919.500002421439,508.233334193428" />
+        <NodeLayout
+          Size="131.333333333334,42.6666666666667"
+          Id="Package\Data Flow Task\Merge Join"
+          TopLeft="779.500002421439,208.900000860095" />
         <NodeLayout
           Size="113.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Lookup"
@@ -7112,21 +7060,17 @@ where [refTable].[PHU] = ?</property>
           Id="Package\Data Flow Task\Load data CaseDetails_Canada"
           TopLeft="994.500002421439,134.900000860095" />
         <NodeLayout
-          Size="172,42.6666666666667"
-          Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="919.500002421439,508.233334193428" />
-        <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\Data Flow Task\Merge Join"
-          TopLeft="779.500002421439,208.900000860095" />
+          Size="98.6666666666667,42.6666666666667"
+          Id="Package\Data Flow Task\Sort"
+          TopLeft="549.500002421439,239.566667526762" />
         <NodeLayout
           Size="254.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Add col Cases_Create, Cases_Update"
           TopLeft="864.621214617159,419.973233125212" />
         <NodeLayout
-          Size="98.6666666666667,42.6666666666667"
-          Id="Package\Data Flow Task\Sort"
-          TopLeft="549.500002421439,239.566667526762" />
+          Size="108,42.6666666666667"
+          Id="Package\Data Flow Task\Sort 1"
+          TopLeft="1028.50000242144,263.900000860095" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output1]"
           TopLeft="648.166669088106,260.900000860095">
@@ -7451,12 +7395,25 @@ where [refTable].[PHU] = ?</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Data Flow Task\Lookup">
     <Properties>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7466,7 +7423,7 @@ where [refTable].[PHU] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -7478,19 +7435,6 @@ where [refTable].[PHU] = ?</property>
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
