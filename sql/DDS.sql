@@ -70,6 +70,7 @@ CREATE TABLE FactInfected(
   CaseStatusID int,
   Case_Count int,
   
+  CONSTRAINT PK_FactInfected PRIMARY KEY(Row_ID),
   CONSTRAINT FK_DimDate FOREIGN KEY(DateKey) REFERENCES DimDate,
   CONSTRAINT FK_DimGender FOREIGN KEY(GenderKey) REFERENCES DimGender,
   CONSTRAINT FK_DimAgeGroup FOREIGN KEY(AgeGroupKey) REFERENCES DimAgeGroup,
