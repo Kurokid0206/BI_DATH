@@ -66,5 +66,5 @@ create table OngoingOutbreaks_Ontario(
 create table PHUGroups(
 	PHU_Group varchar(50),
 	PHU_City varchar(50),
-	PHU_region varchar(50)
+	PHU_region varchar(60)
 )
