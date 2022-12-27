@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="48"
-  DTS:VersionGUID="{630FD09F-A0CF-4216-8F36-83B811710B55}">
+  DTS:VersionBuild="52"
+  DTS:VersionGUID="{28E8CD12-3FD6-4F44-9979-BF9EDA0F4A5C}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -3504,7 +3504,7 @@ FROM   CasesReport_Ontario</property>
                   expressionType="Notify"
                   name="SqlCommandParam"
                   UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=16.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91">select * from (select * from [dbo].[CovidCases]) [refTable]
-where [refTable].[Date_id] = ? and [refTable].[OutbreakRelated] = ?</property>
+where [refTable].[PHU_ID] = ? and [refTable].[Date_id] = ? and [refTable].[Gender] = ? and [refTable].[OutbreakRelated] = ? and [refTable].[Exposure] = ? and [refTable].[Age_group] = ?</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the type of connection used to access the reference dataset."
@@ -3535,12 +3535,12 @@ where [refTable].[Date_id] = ? and [refTable].[OutbreakRelated] = ?</property>
                 <property
                   dataType="System.String"
                   description="Indicates whether to reference metadata in an XML format."
-                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Case_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Age_group" dataType="DT_STR" length="20" precision="0" scale="0" codePage="932"/&gt;&lt;referenceColumn name="Date_id" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Gender" dataType="DT_STR" length="1" precision="0" scale="0" codePage="932"/&gt;&lt;referenceColumn name="Exposure" dataType="DT_STR" length="20" precision="0" scale="0" codePage="932"/&gt;&lt;referenceColumn name="Case_status" dataType="DT_STR" length="20" precision="0" scale="0" codePage="932"/&gt;&lt;referenceColumn name="OutbreakRelated" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PHU_ID" dataType="DT_STR" length="4" precision="0" scale="0" codePage="932"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="Case_id" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Age_group" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Date_id" dataType="DT_DBDATE" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="Gender" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Exposure" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="Case_status" dataType="DT_STR" length="20" precision="0" scale="0" codePage="1252"/&gt;&lt;referenceColumn name="OutbreakRelated" dataType="DT_BOOL" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="PHU_ID" dataType="DT_STR" length="4" precision="0" scale="0" codePage="1252"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
                 <property
                   containsID="true"
                   dataType="System.String"
                   description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
-                  name="ParameterMap">#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[CaseReportedDate]};#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Outbreak_related]};</property>
+                  name="ParameterMap">#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[PHU_ID]};#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[CaseReportedDate]};#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[short_gender]};#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Outbreak_related]};#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Exposure]};#{Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Agegroup]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
@@ -3595,6 +3595,78 @@ where [refTable].[Date_id] = ? and [refTable].[OutbreakRelated] = ?</property>
                           name="CopyFromReferenceColumn" />
                       </properties>
                     </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[PHU_ID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="4"
+                      cachedName="PHU_ID"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[PHU_ID]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">PHU_ID</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Agegroup]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Agegroup"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Agegroup]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Age_group</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[Exposure]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="20"
+                      cachedName="Exposure"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[Exposure]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Exposure</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[short_gender]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="1"
+                      cachedName="short_gender"
+                      lineageId="Package\Data Flow Task\Merge Join.Outputs[Merge Join Output].Columns[short_gender]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">Gender</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
                   <externalMetadataColumns />
                 </input>
@@ -3634,6 +3706,70 @@ where [refTable].[Date_id] = ? and [refTable].[OutbreakRelated] = ?</property>
                           dataType="System.String"
                           description="Specifies the column in the reference table from which a column is copied."
                           name="CopyFromReferenceColumn">OutbreakRelated</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Age_group]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="20"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Age_group]"
+                      name="Age_group"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Age_group</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Gender]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="20"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Gender]"
+                      name="Gender"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Gender</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Exposure]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="20"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[Exposure]"
+                      name="Exposure"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">Exposure</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[PHU_ID]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="4"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[PHU_ID]"
+                      name="PHU_ID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">PHU_ID</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -4827,7 +4963,7 @@ where [refTable].[Date_id] = ? and [refTable].[OutbreakRelated] = ?</property>
                       refId="Package\Data Flow Task\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
                       codePage="1252"
                       dataType="str"
-                      length="1"
+                      length="20"
                       name="Param_3">
                       <properties>
                         <property
@@ -6279,7 +6415,7 @@ where [refTable].[PHU] = ?</property>
         <NodeLayout
           Size="152,42.6666666666667"
           Id="Package\Data Flow Task"
-          TopLeft="648.749990332872,137.883330927392" />
+          TopLeft="629.374990621582,91.0833317642412" />
         <NodeLayout
           Size="202.666666666667,42"
           Id="Package\get LSET, CET PHUGroups"
@@ -6720,7 +6856,7 @@ where [refTable].[PHU] = ?</property>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
             <mssgm:EdgeLabel
-              BoundingBox="-3.91689173200218,26.4119541260797,91.7327734375,11.609375"
+              BoundingBox="-3.91689173200221,26.4119541260797,91.7327734375,11.609375"
               RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
@@ -6950,23 +7086,23 @@ where [refTable].[PHU] = ?</property>
         <NodeLayout
           Size="108,42.6666666666667"
           Id="Package\Data Flow Task\Sort 1"
-          TopLeft="1191,312" />
+          TopLeft="1028.50000242144,263.900000860095" />
         <NodeLayout
           Size="120,42.6666666666667"
           Id="Package\Data Flow Task\Get PHU"
-          TopLeft="639,213" />
+          TopLeft="476.500002421439,164.900000860095" />
         <NodeLayout
           Size="184,42.6666666666667"
           Id="Package\Data Flow Task\Add col Cases_Update"
-          TopLeft="799,469" />
+          TopLeft="636.500002421439,420.900000860095" />
         <NodeLayout
           Size="137.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Update data"
-          TopLeft="792,558.333333333333" />
+          TopLeft="629.500002421439,510.233334193428" />
         <NodeLayout
           Size="113.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Lookup"
-          TopLeft="956,354.666666666667" />
+          TopLeft="793.500002421439,306.566667526762" />
         <NodeLayout
           Size="164,42.6666666666667"
           Id="Package\Data Flow Task\Derived Column 2"
@@ -6974,26 +7110,26 @@ where [refTable].[PHU] = ?</property>
         <NodeLayout
           Size="224,42.6666666666667"
           Id="Package\Data Flow Task\Load data CaseDetails_Canada"
-          TopLeft="1157,183" />
+          TopLeft="994.500002421439,134.900000860095" />
         <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\Data Flow Task\OLE DB Destination"
-          TopLeft="1082,556.333333333333" />
+          TopLeft="919.500002421439,508.233334193428" />
         <NodeLayout
           Size="131.333333333334,42.6666666666667"
           Id="Package\Data Flow Task\Merge Join"
-          TopLeft="942,257" />
+          TopLeft="779.500002421439,208.900000860095" />
         <NodeLayout
           Size="254.666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Add col Cases_Create, Cases_Update"
-          TopLeft="1027.12121219572,468.073232265117" />
+          TopLeft="864.621214617159,419.973233125212" />
         <NodeLayout
           Size="98.6666666666667,42.6666666666667"
           Id="Package\Data Flow Task\Sort"
-          TopLeft="712,287.666666666667" />
+          TopLeft="549.500002421439,239.566667526762" />
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output1]"
-          TopLeft="810.666666666667,309">
+          TopLeft="648.166669088106,260.900000860095">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7027,7 +7163,7 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Sort Output]"
-          TopLeft="1191,333.333333333333">
+          TopLeft="1028.50000242144,285.233334193428">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7061,30 +7197,30 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output1]"
-          TopLeft="1269,225.666666666667">
+          TopLeft="1106.50000242144,177.566667526762">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="132,34.3333333333333"
+              EndConnector="294.499997578561,82.4333324732383"
               Start="0,0"
-              End="132,26.8333333333333">
+              End="294.499997578561,74.9333324732383">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,13.1666666666667" />
+                    End="0,37.2166662366192" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,13.1666666666667"
-                    Point2="0,17.1666666666667"
-                    Point3="4,17.1666666666667" />
+                    Point1="0,37.2166662366192"
+                    Point2="0,41.2166662366192"
+                    Point3="4,41.2166662366192" />
                   <mssgle:LineSegment
-                    End="128,17.1666666666667" />
+                    End="290.499997578561,41.2166662366192" />
                   <mssgle:CubicBezierSegment
-                    Point1="128,17.1666666666667"
-                    Point2="132,17.1666666666667"
-                    Point3="132,21.1666666666667" />
+                    Point1="290.499997578561,41.2166662366192"
+                    Point2="294.499997578561,41.2166662366192"
+                    Point3="294.499997578561,45.2166662366192" />
                   <mssgle:LineSegment
-                    End="132,26.8333333333333" />
+                    End="294.499997578561,74.9333324732383" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7095,7 +7231,7 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
-          TopLeft="699,255.666666666667">
+          TopLeft="536.500002421439,207.566667526762">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7129,7 +7265,7 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Merge Join Output]"
-          TopLeft="1010.16666666667,299.666666666667">
+          TopLeft="847.666669088109,251.566667526762">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7151,7 +7287,7 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Match Output]"
-          TopLeft="1012.66666666667,397.333333333333">
+          TopLeft="850.166669088109,349.233334193428">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7187,7 +7323,7 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Lookup Error Output]"
-          TopLeft="1030.22222222222,397.333333333333">
+          TopLeft="867.722224643659,349.233334193428">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7223,7 +7359,7 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output2]"
-          TopLeft="1154.45454552905,510.739898931784">
+          TopLeft="991.954547950489,462.639899791879">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7257,24 +7393,18 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output1]"
-          TopLeft="1319,281.333333333333">
+          TopLeft="1319,283.283333763381">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-74,30.6666666666667"
+              EndConnector="-182.499997578561,0"
               Start="0,0"
-              End="-74,23.1666666666667">
+              End="-174.999997578561,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-70,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-70,0"
-                    Point2="-74,0"
-                    Point3="-74,4" />
-                  <mssgle:LineSegment
-                    End="-74,23.1666666666667" />
+                    End="-174.999997578561,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -7285,7 +7415,7 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\Data Flow Task.Paths[Derived Column Output]"
-          TopLeft="891,511.666666666667">
+          TopLeft="728.500002421439,463.566667526762">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
@@ -7326,7 +7456,7 @@ where [refTable].[PHU] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7336,7 +7466,7 @@ where [refTable].[PHU] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
