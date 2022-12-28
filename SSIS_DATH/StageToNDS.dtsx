@@ -11,8 +11,8 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="53"
-  DTS:VersionGUID="{5A948117-5D67-4184-9609-6DC1D9EAC485}">
+  DTS:VersionBuild="54"
+  DTS:VersionGUID="{58867428-08E8-4397-AC4F-EFD6E9119288}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -2429,7 +2429,7 @@ where [refTable].[PHU_ID] = ? and [refTable].[Date_id] = ? and [refTable].[Expos
                       refId="Package\CaseDetails_Canada to CovidCases\Update data.Inputs[OLE DB Command Input].ExternalColumns[Param_3]"
                       codePage="1252"
                       dataType="str"
-                      length="20"
+                      length="1"
                       name="Param_3">
                       <properties>
                         <property
@@ -6417,19 +6417,19 @@ where [refTable].[PHU] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="244,42.6666666666667"
+          Size="244,43"
           Id="Package\CaseDetails_Canada to CovidCases"
           TopLeft="581.2499913387,15.033333124121" />
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="152,43"
           Id="Package\Data Flow Task"
           TopLeft="629.374990621582,91.0833317642412" />
         <NodeLayout
-          Size="202.666666666667,42"
+          Size="203,42"
           Id="Package\get LSET, CET PHUGroups"
           TopLeft="16.249999757856,252.70000072062" />
         <NodeLayout
-          Size="266.666666666667,42"
+          Size="267,42"
           Id="Package\get LSET, CET PublicHealthUnit_Ontario"
           TopLeft="270.124999618158,258.849997105896" />
         <NodeLayout
@@ -6445,11 +6445,11 @@ where [refTable].[PHU] = ?</property>
           Id="Package\update CET PublicHealthUnit_Ontario"
           TopLeft="278.62499965541,88.7000054278969" />
         <NodeLayout
-          Size="194.666666666667,42"
+          Size="195,42"
           Id="Package\update LSET PHUGroups"
           TopLeft="300.374995632097,185.000003603101" />
         <NodeLayout
-          Size="258.666666666667,42"
+          Size="259,42"
           Id="Package\update LSET PublicHealthUnit_Ontario"
           TopLeft="3.81842224328466E-06,87.5499984657764" />
         <EdgeLayout
@@ -6593,75 +6593,63 @@ where [refTable].[PHU] = ?</property>
       <GraphLayout
         Capacity="32" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="164,42.6666666666667"
-          Id="Package\CaseDetails_Canada to CovidCases\Derived Column 1"
-          TopLeft="827,60" />
-        <NodeLayout
-          Size="108,42.6666666666667"
-          Id="Package\CaseDetails_Canada to CovidCases\Sort 1"
-          TopLeft="641,105.666666666667" />
-        <NodeLayout
-          Size="184,42.6666666666667"
-          Id="Package\CaseDetails_Canada to CovidCases\Add col Cases_Update"
-          TopLeft="276,420" />
-        <NodeLayout
-          Size="137.333333333334,42.6666666666667"
+          Size="137,43"
           Id="Package\CaseDetails_Canada to CovidCases\Update data"
-          TopLeft="269,509.333333333333" />
+          TopLeft="163,504.333333333333" />
         <NodeLayout
-          Size="176,42.6666666666667"
+          Size="176,43"
           Id="Package\CaseDetails_Canada to CovidCases\Insert data into NDS"
-          TopLeft="544.374995911494,507.816666538813" />
+          TopLeft="441.374995911494,490.816666538813" />
         <NodeLayout
-          Size="98.6666666666667,42.6666666666667"
-          Id="Package\CaseDetails_Canada to CovidCases\Sort"
-          TopLeft="146,101.666666666667" />
+          Size="184,43"
+          Id="Package\CaseDetails_Canada to CovidCases\Add col Cases_Update"
+          TopLeft="146,417" />
         <NodeLayout
-          Size="224,42.6666666666667"
+          Size="224,43"
           Id="Package\CaseDetails_Canada to CovidCases\Load data CaseDetails_Canada"
-          TopLeft="609,12" />
+          TopLeft="458,25" />
         <NodeLayout
-          Size="131.333333333334,42.6666666666667"
-          Id="Package\CaseDetails_Canada to CovidCases\Merge Join"
-          TopLeft="368,121.666666666667" />
-        <NodeLayout
-          Size="277.333333333334,42.6666666666667"
+          Size="283,43"
           Id="Package\CaseDetails_Canada to CovidCases\Reporting_PHU of Stage is exists in NDS ?"
-          TopLeft="364,323.333333333333" />
+          TopLeft="220,293.333333333333" />
         <NodeLayout
-          Size="120,42.6666666666667"
+          Size="131,43"
+          Id="Package\CaseDetails_Canada to CovidCases\Merge Join"
+          TopLeft="302,176.666666666667" />
+        <NodeLayout
+          Size="120,43"
           Id="Package\CaseDetails_Canada to CovidCases\Get PHU"
-          TopLeft="73,27" />
+          TopLeft="138,45" />
         <NodeLayout
-          Size="254.666666666667,42.6666666666667"
+          Size="164,43"
+          Id="Package\CaseDetails_Canada to CovidCases\Derived Column 1"
+          TopLeft="487,108" />
+        <NodeLayout
+          Size="99,43"
+          Id="Package\CaseDetails_Canada to CovidCases\Sort"
+          TopLeft="145,183.666666666667" />
+        <NodeLayout
+          Size="255,43"
           Id="Package\CaseDetails_Canada to CovidCases\Add col Cases_Create, Cases_Update"
-          TopLeft="504.121212195718,419.073232265117" />
+          TopLeft="399.121212195718,416.073232265117" />
+        <NodeLayout
+          Size="108,43"
+          Id="Package\CaseDetails_Canada to CovidCases\Sort 1"
+          TopLeft="518,173.666666666667" />
         <EdgeLayout
           Id="Package\CaseDetails_Canada to CovidCases.Paths[Sort Output1]"
-          TopLeft="244.666666666667,123">
+          TopLeft="244,201.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="123.333333333334,20"
+              EndConnector="58,0"
               Start="0,0"
-              End="115.833333333334,20">
+              End="50.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="57.6666666666668,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="57.6666666666668,0"
-                    Point2="61.6666666666668,0"
-                    Point3="61.6666666666668,4" />
-                  <mssgle:LineSegment
-                    End="61.6666666666668,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="61.6666666666668,16"
-                    Point2="61.6666666666668,20"
-                    Point3="65.6666666666668,20" />
-                  <mssgle:LineSegment
-                    End="115.833333333334,20" />
+                    End="50.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6672,30 +6660,18 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CaseDetails_Canada to CovidCases.Paths[Sort Output]"
-          TopLeft="641,127">
+          TopLeft="518,196.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-141.666666666666,16.0000000000001"
+              EndConnector="-85,0"
               Start="0,0"
-              End="-134.166666666666,16.0000000000001">
+              End="-77.5,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="-66.8333333333332,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-66.8333333333332,0"
-                    Point2="-70.8333333333332,0"
-                    Point3="-70.8333333333332,4" />
-                  <mssgle:LineSegment
-                    End="-70.8333333333332,12.0000000000001" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-70.8333333333332,12.0000000000001"
-                    Point2="-70.8333333333332,16.0000000000001"
-                    Point3="-74.8333333333332,16.0000000000001" />
-                  <mssgle:LineSegment
-                    End="-134.166666666666,16.0000000000001" />
+                    End="-77.5,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6706,24 +6682,18 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CaseDetails_Canada to CovidCases.Paths[OLE DB Source Output1]"
-          TopLeft="833,33.3333333333333">
+          TopLeft="569.5,68">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="75.9999999999997,26.6666666666667"
+              EndConnector="0,40"
               Start="0,0"
-              End="75.9999999999997,19.1666666666667">
+              End="0,32.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="71.9999999999997,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="71.9999999999997,0"
-                    Point2="75.9999999999997,0"
-                    Point3="75.9999999999997,4" />
-                  <mssgle:LineSegment
-                    End="75.9999999999997,19.1666666666667" />
+                    End="0,32.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6734,192 +6704,18 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CaseDetails_Canada to CovidCases.Paths[OLE DB Source Output]"
-          TopLeft="133,69.6666666666667">
+          TopLeft="196.25,88">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="62.3333333333333,32"
+              EndConnector="0,95.666666666667"
               Start="0,0"
-              End="62.3333333333333,24.5">
+              End="0,88.166666666667">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,12" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,12"
-                    Point2="0,16"
-                    Point3="4,16" />
-                  <mssgle:LineSegment
-                    End="58.3333333333333,16" />
-                  <mssgle:CubicBezierSegment
-                    Point1="58.3333333333333,16"
-                    Point2="62.3333333333333,16"
-                    Point3="62.3333333333333,20" />
-                  <mssgle:LineSegment
-                    End="62.3333333333333,24.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CaseDetails_Canada to CovidCases.Paths[Lookup Match Output]"
-          TopLeft="457.777777777778,366">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-89.7777777777779,53.9999999999999"
-              Start="0,0"
-              End="-89.7777777777779,46.4999999999999">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.7858508604206" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.7858508604206"
-                    Point2="0,21.7858508604206"
-                    Point3="-4,21.7858508604206" />
-                  <mssgle:LineSegment
-                    End="-85.7777777777779,21.7858508604206" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-85.7777777777779,21.7858508604206"
-                    Point2="-89.7777777777779,21.7858508604206"
-                    Point3="-89.7777777777779,25.7858508604206" />
-                  <mssgle:LineSegment
-                    End="-89.7777777777779,46.4999999999999" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-93.080275607639,26.7858508604206,96.3827734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CaseDetails_Canada to CovidCases.Paths[Lookup Error Output]"
-          TopLeft="547.555555555556,366">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="83.8989899734956,53.0732322651169"
-              Start="0,0"
-              End="83.8989899734956,45.5732322651169">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,17.4119541260797" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,17.4119541260797"
-                    Point2="0,21.4119541260797"
-                    Point3="4,21.4119541260797" />
-                  <mssgle:LineSegment
-                    End="79.8989899734956,21.4119541260797" />
-                  <mssgle:CubicBezierSegment
-                    Point1="79.8989899734956,21.4119541260797"
-                    Point2="83.8989899734956,21.4119541260797"
-                    Point3="83.8989899734956,25.4119541260797" />
-                  <mssgle:LineSegment
-                    End="83.8989899734956,45.5732322651169" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="-3.91689173200221,26.4119541260797,91.7327734375,11.609375"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output2]"
-          TopLeft="827,81.3333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-77.9999999999999,45.6666666666666"
-              Start="0,0"
-              End="-70.4999999999999,45.6666666666666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-34.9999999999999,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-34.9999999999999,0"
-                    Point2="-38.9999999999999,0"
-                    Point3="-38.9999999999999,4" />
-                  <mssgle:LineSegment
-                    End="-38.9999999999999,41.6666666666666" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-38.9999999999999,41.6666666666666"
-                    Point2="-38.9999999999999,45.6666666666666"
-                    Point3="-42.9999999999999,45.6666666666666" />
-                  <mssgle:LineSegment
-                    End="-70.4999999999999,45.6666666666666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output1]"
-          TopLeft="368,462.666666666667">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-30.3333333333333,46.6666666666666"
-              Start="0,0"
-              End="-30.3333333333333,39.1666666666666">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,19.3333333333333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,19.3333333333333"
-                    Point2="0,23.3333333333333"
-                    Point3="-4,23.3333333333333" />
-                  <mssgle:LineSegment
-                    End="-26.3333333333333,23.3333333333333" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-26.3333333333333,23.3333333333333"
-                    Point2="-30.3333333333333,23.3333333333333"
-                    Point3="-30.3333333333333,27.3333333333333" />
-                  <mssgle:LineSegment
-                    End="-30.3333333333333,39.1666666666666" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output]"
-          TopLeft="631.914770720273,461.739898931784">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,46.0767676070294"
-              Start="0,0"
-              End="0,38.5767676070294">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,38.5767676070294" />
+                    End="0,88.166666666667" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6930,30 +6726,156 @@ where [refTable].[PHU] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package\CaseDetails_Canada to CovidCases.Paths[Merge Join Output]"
-          TopLeft="433.666666666667,164.333333333334">
+          TopLeft="364.5,219.666666666667">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="68.9999999999999,158.999999999999"
+              EndConnector="0,73.666666666666"
               Start="0,0"
-              End="68.9999999999999,151.499999999999">
+              End="0,66.166666666666">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,75.4999999999996" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,75.4999999999996"
-                    Point2="0,79.4999999999996"
-                    Point3="4,79.4999999999996" />
+                    End="0,66.166666666666" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CaseDetails_Canada to CovidCases.Paths[Lookup Match Output]"
+          TopLeft="315.666666666667,336.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-77.6666666666666,80.666666666667"
+              Start="0,0"
+              End="-77.6666666666666,73.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
                   <mssgle:LineSegment
-                    End="64.9999999999999,79.4999999999996" />
+                    End="0,28.538767861326" />
                   <mssgle:CubicBezierSegment
-                    Point1="64.9999999999999,79.4999999999996"
-                    Point2="68.9999999999999,79.4999999999996"
-                    Point3="68.9999999999999,83.4999999999996" />
+                    Point1="0,28.538767861326"
+                    Point2="0,32.538767861326"
+                    Point3="-4,32.538767861326" />
                   <mssgle:LineSegment
-                    End="68.9999999999999,151.499999999999" />
+                    End="-73.6666666666666,32.538767861326" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-73.6666666666666,32.538767861326"
+                    Point2="-77.6666666666666,32.538767861326"
+                    Point3="-77.6666666666666,36.538767861326" />
+                  <mssgle:LineSegment
+                    End="-77.6666666666666,73.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="-87.0247200520833,37.538767861326,96.3827734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CaseDetails_Canada to CovidCases.Paths[Lookup Error Output]"
+          TopLeft="407.333333333333,336.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="119.287878862385,79.739898931784"
+              Start="0,0"
+              End="119.287878862385,72.239898931784">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28.1649346358707" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28.1649346358707"
+                    Point2="0,32.1649346358707"
+                    Point3="4,32.1649346358707" />
+                  <mssgle:LineSegment
+                    End="115.287878862385,32.1649346358707" />
+                  <mssgle:CubicBezierSegment
+                    Point1="115.287878862385,32.1649346358707"
+                    Point2="119.287878862385,32.1649346358707"
+                    Point3="119.287878862385,36.1649346358707" />
+                  <mssgle:LineSegment
+                    End="119.287878862385,72.239898931784" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="13.7775527124424,37.1649346358707,91.7327734375,11.609375"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output2]"
+          TopLeft="570.5,151">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,22.666666666667"
+              Start="0,0"
+              End="0,15.166666666667">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,15.166666666667" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output1]"
+          TopLeft="234.75,460">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,44.333333333333"
+              Start="0,0"
+              End="0,36.833333333333">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.833333333333" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\CaseDetails_Canada to CovidCases.Paths[Derived Column Output]"
+          TopLeft="527.998104053606,459.073232265117">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,31.743434273696"
+              Start="0,0"
+              End="0,24.243434273696">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,24.243434273696" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -6992,7 +6914,7 @@ where [refTable].[PHU] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -7002,7 +6924,7 @@ where [refTable].[PHU] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
