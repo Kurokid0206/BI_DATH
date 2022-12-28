@@ -57,40 +57,54 @@ CREATE TABLE DimOutBreakGroup(
 	CONSTRAINT PK_OutbreakGroup PRIMARY KEY(GroupID)
 )
 
-CREATE TABLE DimOutBreak(
+CREATE TABLE FactOutbreak(
 	OubreakID		INT NOT NULL Identity(1,1),
 	DateKey			INT,
 	PHUKey			INT,
 	OutbreakGroup	INT,
 	OngoingOutbreak	INT,
-	CONSTRAINT PK_Outbreak PRIMARY KEY(OubreakID),
+	CONSTRAINT PK_FactOutbreak PRIMARY KEY(OubreakID),
 	CONSTRAINT FK_Outbreak_PHU FOREIGN KEY(PHUKey) REFERENCES DimPublicHealthUnit,
 	CONSTRAINT FK_Outbreak_Date FOREIGN KEY(DateKey) REFERENCES DimDate,
 	CONSTRAINT FK_Outbreak_Group FOREIGN KEY(OutbreakGroup) REFERENCES DimOutBreakGroup
 )
 
 CREATE TABLE FactVaccinated(
-	ROW_ID			INT NOT NULL Identity(1,1),
+	Row_ID			INT NOT NULL Identity(1,1),
 	PHUKey			INT,
 	DateKey			INT,
-	SeverityKey		INT,
 	VaccinatedCount INT,
-	CONSTRAINT PK_FactVaccinated PRIMARY KEY(ROW_ID),
+	CONSTRAINT PK_FactVaccinated PRIMARY KEY(Row_ID),
 	CONSTRAINT FK_FactVaccinated_PHU FOREIGN KEY(PHUKey) REFERENCES DimPublicHealthUnit,
 	CONSTRAINT FK_FactVaccinated_Date FOREIGN KEY(DateKey) REFERENCES DimDate(DateKey),
-	CONSTRAINT FK_FactVaccinated_Severity FOREIGN KEY(SeverityKey) REFERENCES DimSeverity(SeverityKey)
 )
 
-CREATE TABLE FactInfected(
+CREATE TABLE FactSeverity(
 	Row_ID			INT NOT NULL Identity(1,1),
 	DateKey			INT,
 	SeverityKey		INT,
 	PHUKey			INT,
 	CaseCount		INT,
-	CONSTRAINT PK_FactInfected PRIMARY KEY(Row_ID),
+	CONSTRAINT PK_FactSeverity PRIMARY KEY(Row_ID),
 	CONSTRAINT FK_DimDate FOREIGN KEY(DateKey) REFERENCES DimDate,
 	CONSTRAINT FK_Severity FOREIGN KEY(SeverityKey) REFERENCES DimSeverity,
 	CONSTRAINT FK_PublicHealthUnit FOREIGN KEY(PHUKey) REFERENCES DimPublicHealthUnit,
+)
+
+CREATE TABLE FactInfected(
+	Row_ID			INT NOT NULL Identity(1,1),
+	Agegroup		INT,
+	Gender			INT,
+	DateKey			INT,
+	PHUKey			INT,
+	DeceasedCount	INT,
+	ActiveCount		INT,
+	RecoveredCount	INT
+	CONSTRAINT PK_FactInfected PRIMARY KEY(Row_ID),
+	CONSTRAINT FK_FactInfected_DimDate FOREIGN KEY(DateKey) REFERENCES DimDate,
+	CONSTRAINT FK_Agegroup FOREIGN KEY(Agegroup) REFERENCES DimAgeGroup,
+	CONSTRAINT FK_Gender FOREIGN KEY(Gender) REFERENCES DimGender,
+	CONSTRAINT FK_FactInfected_PHU FOREIGN KEY(PHUKey) REFERENCES DimPublicHealthUnit,
 )
 
 INSERT INTO DimGender(GenderName) VALUES('Female')
@@ -107,5 +121,3 @@ INSERT INTO DimCaseStatus(CaseStatus) VALUES('Recovered')
 INSERT INTO DimCaseStatus(CaseStatus) VALUES('Deceased')
 INSERT INTO DimCaseStatus(CaseStatus) VALUES('Active')
 INSERT INTO DimCaseStatus(CaseStatus) VALUES('Not Reported')
-
-
