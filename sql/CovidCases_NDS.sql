@@ -21,8 +21,8 @@ CREATE TABLE CovidCases(
 	Age_group		VarChar(20),	--WHERE
 	Date_id			Date,			--WHERE
 	Gender			Char(1),		--WHERE
-	Exposure		VarChar(20),		--Exposure + CaseAcquisitionInfo
-	Case_status		VarChar(20),		--Fatal = Deceased, Active = Not Resolve, Recover = Resolved, Not Reported (outcome = case status)
+	Exposure		VarChar(20),	--Exposure + CaseAcquisitionInfo
+	Case_status		VarChar(20),	--Fatal = Deceased, Active = Not Resolve, Recover = Resolved, Not Reported (outcome = case status)
 	OutbreakRelated Bit,
 	PHU_ID			Char(4),		--WHERE
 	CONSTRAINT PK_CovidCases PRIMARY KEY(Case_id),
