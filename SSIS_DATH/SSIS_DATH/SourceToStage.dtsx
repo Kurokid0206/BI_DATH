@@ -5,21 +5,21 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-UJGB2MI"
   DTS:CreatorName="DESKTOP-UJGB2MI\OXI PC"
-  DTS:DTSID="{371F78B9-04B2-42AF-8E6B-6ED3B321AA09}"
+  DTS:DTSID="{E2B57A22-B50E-47F5-978C-47D79C9CAAB3}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.845.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="44"
-  DTS:VersionGUID="{0211CE02-5FBF-4C05-ABC7-82240EA558FD}">
+  DTS:VersionBuild="48"
+  DTS:VersionGUID="{565AB678-1471-4356-9773-7F10053828E3}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Cases Report.csv]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{90DEB581-5FD1-4663-A00F-B6262CD38184}"
+      DTS:DTSID="{236E0485-398A-4B23-B7A8-958D51B85029}"
       DTS:ObjectName="Cases Report.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Outcome"
-              DTS:DTSID="{04F15712-F307-4DA6-9021-CBD27E7585CA}"
+              DTS:DTSID="{96C22FF6-F4C5-4FE7-A535-6BEF95DB827D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age"
-              DTS:DTSID="{164B348D-50ED-4E32-8C12-C85EB06E9EF7}"
+              DTS:DTSID="{DA00741A-031C-41A2-A7E6-F54CC42A7D9D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Gender"
-              DTS:DTSID="{5E212D05-15B9-426A-8D93-F7DA1C1E9C23}"
+              DTS:DTSID="{98506A08-04BA-414D-A97B-E5FD2C96FD6B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Reporting PHU"
-              DTS:DTSID="{0855A6C7-2259-4B2F-95FA-95FE50AD68C4}"
+              DTS:DTSID="{965B4F5F-4C4F-4D67-9D12-E29D6267E10F}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SpecimenDate"
-              DTS:DTSID="{E50D8250-C58E-440F-ADB8-025472A442A4}"
+              DTS:DTSID="{D31845AF-8981-4A9C-BA43-968AF80C13DB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CaseReported Date"
-              DTS:DTSID="{2436A9DD-05E7-46EF-9918-27F32102A732}"
+              DTS:DTSID="{03BFF1BA-828E-489C-B06B-677BE7F7021D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHUCity"
-              DTS:DTSID="{A23B4617-B2F4-4144-9472-ABA44894EE45}"
+              DTS:DTSID="{8A91B602-F043-4B27-A299-58B70CE25D8D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestReported Date"
-              DTS:DTSID="{62654BA2-7977-412B-93CC-3BF6D5611EC7}"
+              DTS:DTSID="{F4F1F596-D874-4263-BF65-19C028E59C91}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CaseAcquisition info"
-              DTS:DTSID="{B6D7996D-EA62-4BBC-8F2D-C663EB562932}"
+              DTS:DTSID="{6FB6F534-672B-4839-AA5E-E646F492CA54}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="AccurateEpisode Dt"
-              DTS:DTSID="{72388E6F-52B0-4124-838F-3D5152200E97}"
+              DTS:DTSID="{6C384681-EC23-4FE9-BBE5-02D765B4D208}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Address"
-              DTS:DTSID="{E52A4A00-663B-4F9E-B36B-E874156B0001}"
+              DTS:DTSID="{3FE741F1-5C0C-480F-B07F-EA68C24D7507}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Website"
-              DTS:DTSID="{91A7B5ED-FA6F-4011-ABD9-C56458EEAE86}"
+              DTS:DTSID="{ACE22517-71ED-49EA-9113-05C72269E6A9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OutbreakRelated"
-              DTS:DTSID="{B0DD44C2-C2F6-42CA-BD1F-E63EB7D3AC60}"
+              DTS:DTSID="{8D8B95DF-3FBB-416D-99EE-F5CB835667E0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Latitude"
-              DTS:DTSID="{F7CCC969-4F7E-4393-A7D7-DDD76B9144B6}"
+              DTS:DTSID="{A86739AB-DCD4-4371-A36D-A98A684A71DF}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +165,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Longitude"
-              DTS:DTSID="{A22255C1-96C4-459E-B485-92B660B853B6}"
+              DTS:DTSID="{0D628F29-7BBC-4427-A762-840EB339B368}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +174,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Postal Code"
-              DTS:DTSID="{A3A4C5AF-F0FE-4517-9A24-23AFEE12DD1D}"
+              DTS:DTSID="{FE125CC8-0776-4634-9AA9-EA2FFB93B5B4}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -183,7 +183,7 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[Compiled_COVID-19_Case_Details_(Canada).csv]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{D7E1B056-B533-4B34-9392-A6BD2DA3EBBF}"
+      DTS:DTSID="{5024CDFB-486D-4F94-9886-175FCB2944C4}"
       DTS:ObjectName="Compiled_COVID-19_Case_Details_(Canada).csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -203,7 +203,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ObjectId"
-              DTS:DTSID="{8A01F543-1FC0-4C2C-9660-1E04D94E3473}"
+              DTS:DTSID="{7614CF53-AA9F-4EDC-B982-E7AE749FD02D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +212,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="row_id"
-              DTS:DTSID="{2AD32687-F4DD-4763-B6E7-AB0E306E7D89}"
+              DTS:DTSID="{3F96B2C2-BF89-4379-983B-185DDDE44A8C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -221,7 +221,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="date_reported"
-              DTS:DTSID="{CE034CAB-A2EA-4161-952E-0B61E15D3EB6}"
+              DTS:DTSID="{48771F0E-71AE-4905-8D5D-56E5CBC07079}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,7 +230,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="health_region"
-              DTS:DTSID="{F45888BE-C16B-43A0-95D3-3AF85D4C8777}"
+              DTS:DTSID="{27E0F2FE-0E7E-491E-8C7C-5BB58C7CE2EA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -239,7 +239,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="age_group"
-              DTS:DTSID="{ADBC9C2A-88C4-4C44-87D9-284DD4C7BA1E}"
+              DTS:DTSID="{E5FB8F08-C36E-4E54-BEBE-869DD4D9BF98}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -248,7 +248,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="gender"
-              DTS:DTSID="{FC48ED57-842E-4012-A2E9-2C219959736E}"
+              DTS:DTSID="{C06F73DA-49D8-47C8-A17D-607A74B3CDFA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -257,7 +257,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="exposure"
-              DTS:DTSID="{E2264B46-B74B-41C3-A192-81E235B8FA57}"
+              DTS:DTSID="{7289289A-2AC6-4365-B833-71D64A8DA90B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -266,7 +266,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="case_status"
-              DTS:DTSID="{F3A74275-91F7-4E7D-ADBF-685658F3C96C}"
+              DTS:DTSID="{626229D4-1DF4-4380-9B27-21753592311A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -275,64 +275,40 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="province"
-              DTS:DTSID="{A3561037-9BDB-4246-A301-03FA0B56D2EF}"
+              DTS:DTSID="{D2FDEA2E-F437-4161-B0EE-D0DD270E7EDB}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{A99DA5F6-9E4C-44AB-8D49-976663067C5F}"
-      DTS:ObjectName="Excel Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\School\BI\Source\Public health unit.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Excel Connection Manager 1]"
-      DTS:CreationName="EXCEL"
-      DTS:DTSID="{B7340B0C-8F67-4BA6-B2E0-55F25D54EBB3}"
-      DTS:ObjectName="Excel Connection Manager 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="0"
-          DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\School\BI\Source\Public Health Units GROUP.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.CovidCases]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{3A9232F7-307F-4EBD-95F9-639D7C3574EA}"
+      DTS:DTSID="{B9F75DD2-6581-4A3D-B854-C4AA379214E7}"
       DTS:ObjectName="LocalHost.CovidCases">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.;Initial Catalog=CovidCases;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{3A9232F7-307F-4EBD-95F9-639D7C3574EA}LocalHost.CovidCases;" />
+          DTS:ConnectionString="Data Source=.;Initial Catalog=CovidCases;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{B9F75DD2-6581-4A3D-B854-C4AA379214E7}LocalHost.CovidCases;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.METADATA]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+      DTS:DTSID="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
       DTS:ObjectName="LocalHost.METADATA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.;Initial Catalog=METADATA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{A8931852-F578-40C8-9D7D-FE0970463E40}LocalHost.METADATA;" />
+          DTS:ConnectionString="Data Source=.;Initial Catalog=METADATA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package-{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}LocalHost.METADATA;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[ongoing_outbreaks_phu.csv]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{DE26641A-8ABF-45FB-90BE-89A2BE1EBDE7}"
+      DTS:DTSID="{4F5EDD41-021C-42CE-A356-1CA6BBFD9785}"
       DTS:ObjectName="ongoing_outbreaks_phu.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -352,7 +328,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="date"
-              DTS:DTSID="{D0A761B9-0FAC-4914-BF49-9D98D57AC650}"
+              DTS:DTSID="{ADC4E845-2CC4-40CC-809A-84EAE79C9F81}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -361,7 +337,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="phu_num"
-              DTS:DTSID="{E9FCB437-2ED8-47CD-9935-C5F520E6D3A3}"
+              DTS:DTSID="{1A7ED41D-B70D-4F33-8A07-FA12DFA7E9F7}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -370,7 +346,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="outbreak_group"
-              DTS:DTSID="{7F489AE1-6400-41F3-8FFB-CDD3995AD86D}"
+              DTS:DTSID="{DD51A192-C216-4F5C-97CE-EFFB55655520}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -379,16 +355,40 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="number_ongoing_outbreaks"
-              DTS:DTSID="{0C1CA730-D54B-4F29-AF48-77BA7F0E9926}"
+              DTS:DTSID="{625FEBBC-3F84-46D1-BB27-DFAE485E23CB}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Public health unit]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{9C3FB727-A85C-4957-83B2-3729C12D6132}"
+      DTS:ObjectName="Public health unit">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\School\BI\Source\Public health unit.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Public Health Units GROUP]"
+      DTS:CreationName="EXCEL"
+      DTS:DTSID="{14A2593F-49BC-45D9-B15B-692369AF93F9}"
+      DTS:ObjectName="Public Health Units GROUP">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectRetryCount="0"
+          DTS:ConnectRetryInterval="0"
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\School\BI\Source\Public Health Units GROUP.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[vaccines_by_age_phu.csv]"
       DTS:CreationName="FLATFILE"
-      DTS:DTSID="{182F9C53-1C0B-457B-AACE-35835A4CFB9D}"
+      DTS:DTSID="{DE68E6C4-3AC0-4231-9291-22FCEB983C45}"
       DTS:ObjectName="vaccines_by_age_phu.csv">
       <DTS:ObjectData>
         <DTS:ConnectionManager
@@ -408,7 +408,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date"
-              DTS:DTSID="{907DD351-80B5-4365-97D8-143E617D638A}"
+              DTS:DTSID="{96F5BE54-3F6A-4C8D-96FD-58805B588BEE}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -417,7 +417,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU ID"
-              DTS:DTSID="{BEB82C7C-60B1-475E-AAD3-82FC98DF363B}"
+              DTS:DTSID="{6352A0C4-CA1D-4D7F-9AD2-A2AEFC97F06C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -426,7 +426,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Agegroup"
-              DTS:DTSID="{6239D136-DD37-4671-8687-562B153750A9}"
+              DTS:DTSID="{181C8E90-AA4E-4370-8542-CECBF813181D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -435,7 +435,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="At least one dose_cumulative"
-              DTS:DTSID="{0B38EF90-9BB5-4E59-B72C-67B4592990A6}"
+              DTS:DTSID="{BF667BDA-F6C0-494C-AE24-AA020E92945C}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -444,7 +444,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Second_dose_cumulative"
-              DTS:DTSID="{6250A761-35CD-4192-B945-EA5A984B1D34}"
+              DTS:DTSID="{E10F5DA9-4A33-4B2C-8272-69424EEA55F8}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -453,7 +453,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="fully_vaccinated_cumulative"
-              DTS:DTSID="{7D04F464-A325-40D4-8A63-C389CF0B9F00}"
+              DTS:DTSID="{156F9729-1A5B-4ADE-98C5-90D9699BAF38}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -462,7 +462,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="third_dose_cumulative"
-              DTS:DTSID="{13D229EF-9511-4457-B2FD-449D3D2AA614}"
+              DTS:DTSID="{1799AA30-FFAD-4B08-9936-4A740E305D43}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -475,7 +475,7 @@
       DTS:refId="Package\CaseDetails to Stage"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{2041B5D5-3E86-48C0-AF1C-D7B5894777D0}"
+      DTS:DTSID="{8305A507-1A92-4471-85E0-E84D481D4445}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="CaseDetails to Stage">
@@ -1124,7 +1124,7 @@
       DTS:refId="Package\CasesReports to Stage"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{2314B027-AE0F-473F-A045-54D78F49F9DA}"
+      DTS:DTSID="{18933D4C-C839-4533-B102-B3BCDB7C4295}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="CasesReports to Stage">
@@ -1976,7 +1976,7 @@
       DTS:refId="Package\get LSET, CET CaseDetails_Canada"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{D5E55867-BF08-4DB1-AECF-A8DFA701EA94}"
+      DTS:DTSID="{8F763FFB-498C-4552-AB85-7CF7435730EF}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET CaseDetails_Canada"
@@ -1984,7 +1984,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="SELECT LSET,CET &#xA;FROM Data_Flow&#xA;WHERE (TenBang = 'CaseDetails_Canada')" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -1992,7 +1992,7 @@
       DTS:refId="Package\get LSET, CET CasesReport_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{F6E95BDF-31F3-43FC-AE62-33E89FCF7E27}"
+      DTS:DTSID="{1B0493DC-735E-4EAC-A06A-E2EE4CAECE90}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET CasesReport_Ontario"
@@ -2000,7 +2000,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="SELECT LSET,CET&#xA;FROM Data_Flow&#xA;WHERE TenBang = 'CasesReport_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2008,7 +2008,7 @@
       DTS:refId="Package\get LSET, CET OngoingOutbreaks_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{50876dff-a832-410f-af3c-718e3b05e9f5}"
+      DTS:DTSID="{21A8192E-A385-49BD-9E0A-DC555B8B1FB3}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET OngoingOutbreaks_Ontario"
@@ -2016,7 +2016,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="SELECT LSET,CET &#xA;FROM Data_Flow&#xA;WHERE TenBang = 'OngoingOutbreaks_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2024,7 +2024,7 @@
       DTS:refId="Package\get LSET, CET PHUGroups"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{ea6b2b4c-006b-4d09-978d-3c7c282d1fbd}"
+      DTS:DTSID="{3C74C0B9-EF2D-467B-B47C-5318EFF23E36}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET PHUGroups"
@@ -2032,7 +2032,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="SELECT  LSET,CET &#xA;FROM Data_Flow&#xA;WHERE TenBang = 'PHUGroups'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2040,7 +2040,7 @@
       DTS:refId="Package\get LSET, CET PublicHealthUnit_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{d5fa9415-a3b1-4cdf-bdc7-eac0af96e81a}"
+      DTS:DTSID="{819A4716-EE6E-42A8-AF76-867C2A7ABAA4}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET PublicHealthUnit_Ontario"
@@ -2048,7 +2048,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="SELECT LSET,CET &#xA;FROM Data_Flow&#xA;WHERE TenBang = 'PublicHealthUnit_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2056,7 +2056,7 @@
       DTS:refId="Package\get LSET, CET VaccinesByAge"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{474fd23c-ca9b-439d-b9df-15850f68e6d1}"
+      DTS:DTSID="{C3586F1D-7A78-4372-8903-7747DE242A5B}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET VaccinesByAge"
@@ -2064,7 +2064,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="SELECT LSET,CET &#xA;FROM Data_Flow&#xA;WHERE  TenBang = 'VaccinesByAge_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2072,7 +2072,7 @@
       DTS:refId="Package\OngoingOutbreaks to Stage"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{0B4DF2D2-D485-438C-8103-2324071414F1}"
+      DTS:DTSID="{FEF53D76-BC32-4587-81AA-29DB65CAF321}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="OngoingOutbreaks to Stage">
@@ -2428,7 +2428,7 @@
       DTS:refId="Package\PHUGroups to Stage"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{15FA1713-393E-435E-940F-1F703F14DB5F}"
+      DTS:DTSID="{6DE857ED-B8E7-4ECF-9A68-8E7FF4268E4D}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="PHUGroups to Stage">
@@ -2614,8 +2614,8 @@
               <connections>
                 <connection
                   refId="Package\PHUGroups to Stage\Excel Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager 1]"
+                  connectionManagerID="Package.ConnectionManagers[Public Health Units GROUP]"
+                  connectionManagerRefId="Package.ConnectionManagers[Public Health Units GROUP]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -2879,7 +2879,7 @@
       DTS:refId="Package\PublicHealthUnit_Ontario to Stage"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{51C23536-6E4C-4448-8D3A-0DB5A477B5F2}"
+      DTS:DTSID="{3222D8E4-C882-46DA-AA0C-D1953E5F606D}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="PublicHealthUnit_Ontario to Stage">
@@ -3121,8 +3121,8 @@
               <connections>
                 <connection
                   refId="Package\PublicHealthUnit_Ontario to Stage\Excel Source.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Excel Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Excel Connection Manager]"
+                  connectionManagerID="Package.ConnectionManagers[Public health unit]"
+                  connectionManagerRefId="Package.ConnectionManagers[Public health unit]"
                   description="The OLE DB runtime connection used to access the database."
                   name="OleDbConnection" />
               </connections>
@@ -3542,7 +3542,7 @@
       DTS:refId="Package\Truncate CaseDetails"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{738B6EED-D338-4125-B43E-AD490F202165}"
+      DTS:DTSID="{B2895E30-AAD5-410E-A712-7585FD6897BE}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate CaseDetails"
@@ -3550,7 +3550,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{3A9232F7-307F-4EBD-95F9-639D7C3574EA}"
+          SQLTask:Connection="{B9F75DD2-6581-4A3D-B854-C4AA379214E7}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE CaseDetails_Canada" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3558,7 +3558,7 @@
       DTS:refId="Package\Truncate CasesReports"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{B6B8E6F0-9B22-45ED-B2D9-1EC043939FA9}"
+      DTS:DTSID="{04423ABB-A5F4-47CC-BCE9-41034FFDA0EC}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate CasesReports"
@@ -3566,7 +3566,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{3A9232F7-307F-4EBD-95F9-639D7C3574EA}"
+          SQLTask:Connection="{B9F75DD2-6581-4A3D-B854-C4AA379214E7}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE CasesReport_Ontario" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3574,7 +3574,7 @@
       DTS:refId="Package\Truncate OngoingOutbreaks"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{DD4C190F-02A4-49B9-A77F-5E4F07064096}"
+      DTS:DTSID="{7B702F1C-B414-40B2-A78A-15D2CBB2BA18}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate OngoingOutbreaks"
@@ -3582,7 +3582,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{3A9232F7-307F-4EBD-95F9-639D7C3574EA}"
+          SQLTask:Connection="{B9F75DD2-6581-4A3D-B854-C4AA379214E7}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE OngoingOutbreaks_Ontario" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3590,7 +3590,7 @@
       DTS:refId="Package\Truncate PHUGroups"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8B26BA55-0D2C-4F2D-B5B5-9676666A7041}"
+      DTS:DTSID="{6710AD4A-2393-4CD6-A29C-8AE1912508A8}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate PHUGroups"
@@ -3598,7 +3598,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{3A9232F7-307F-4EBD-95F9-639D7C3574EA}"
+          SQLTask:Connection="{B9F75DD2-6581-4A3D-B854-C4AA379214E7}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE PHUGroups" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3606,7 +3606,7 @@
       DTS:refId="Package\Truncate PublicHealthUnit_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{FABF4A36-2A17-497E-90FE-3B56C6C2F0A6}"
+      DTS:DTSID="{81CA62C5-0D54-482D-91DA-44EB4F2F84E6}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate PublicHealthUnit_Ontario"
@@ -3614,7 +3614,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{3A9232F7-307F-4EBD-95F9-639D7C3574EA}"
+          SQLTask:Connection="{B9F75DD2-6581-4A3D-B854-C4AA379214E7}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE PublicHealthUnit_Ontario" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3622,7 +3622,7 @@
       DTS:refId="Package\Truncate VaccinesByAge"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{A383B695-093B-46BC-AE66-9774A9725EF4}"
+      DTS:DTSID="{03EE70C5-0F50-493F-9CC6-D3E7A19C1C3C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="Truncate VaccinesByAge"
@@ -3630,7 +3630,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{3A9232F7-307F-4EBD-95F9-639D7C3574EA}"
+          SQLTask:Connection="{B9F75DD2-6581-4A3D-B854-C4AA379214E7}"
           SQLTask:SqlStatementSource="TRUNCATE TABLE VaccinesByAge_Ontario" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3638,7 +3638,7 @@
       DTS:refId="Package\update CET CaseDetails_Canada"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{FAA450D3-467B-4AED-B816-D90EBCD19184}"
+      DTS:DTSID="{47C2740B-2858-4915-858E-3E256DA9B6D1}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update CET CaseDetails_Canada"
@@ -3646,7 +3646,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='CaseDetails_Canada'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3654,7 +3654,7 @@
       DTS:refId="Package\update CET CasesReports_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{9FB52FA8-6715-439F-8E73-325EE2E2A43F}"
+      DTS:DTSID="{D8FB04E9-B183-425B-BD98-8636367FC6D8}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update CET CasesReports_Ontario"
@@ -3662,7 +3662,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow &#xA;set CET = GETDATE() &#xA;where tenbang='CasesReport_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3670,7 +3670,7 @@
       DTS:refId="Package\update CET OngoingOutbreaks_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{a9cade13-cf8b-46ef-b94a-69ef53dec375}"
+      DTS:DTSID="{07983D51-E284-408F-99AF-C2473C27284C}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update CET OngoingOutbreaks_Ontario"
@@ -3678,7 +3678,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='OngoingOutbreaks_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3686,7 +3686,7 @@
       DTS:refId="Package\update CET PHUGroups"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{81896063-82ea-4351-ad8b-b30d3525842b}"
+      DTS:DTSID="{8BC53DF0-043B-4045-B8A6-09AFB74B89DA}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update CET PHUGroups"
@@ -3694,7 +3694,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='PHUGroups'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3702,7 +3702,7 @@
       DTS:refId="Package\update CET PublicHealthUnit_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{03b05949-7fd3-4f00-8353-130390f60239}"
+      DTS:DTSID="{DF50121E-240E-46A7-8894-332F8F6D2BF4}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update CET PublicHealthUnit_Ontario"
@@ -3710,7 +3710,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='PublicHealthUnit_Ontario'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3718,7 +3718,7 @@
       DTS:refId="Package\update CET VaccinesByAge"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{02d4e8e2-f0de-4a8e-ab2c-a2480daea5f5}"
+      DTS:DTSID="{58EA785C-A69A-46C8-A73D-46E748BD6AA0}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update CET VaccinesByAge"
@@ -3726,7 +3726,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='VaccinesByAge_Ontario'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3734,7 +3734,7 @@
       DTS:refId="Package\update LSET CaseDetails_Canada"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{64628C00-C8B1-4103-AA59-EB275EE94A88}"
+      DTS:DTSID="{03E99D73-DD20-472B-B9B3-BEC67C28CEBB}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update LSET CaseDetails_Canada"
@@ -3742,7 +3742,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='CaseDetails_Canada'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3750,7 +3750,7 @@
       DTS:refId="Package\update LSET CasesReports_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{B948BFA1-96D2-443F-B326-931619DC6D37}"
+      DTS:DTSID="{9F61D039-EB9C-4454-9E38-F494EF04C006}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update LSET CasesReports_Ontario"
@@ -3758,7 +3758,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='CasesReport_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3766,7 +3766,7 @@
       DTS:refId="Package\update LSET OngoingOutbreaks_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{08f70f74-e1ac-4442-b9a0-a8fb45f2e62a}"
+      DTS:DTSID="{8D24C89B-3E53-44FF-A5CF-68148EB11C82}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update LSET OngoingOutbreaks_Ontario"
@@ -3774,7 +3774,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='OngoingOutbreaks_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3782,7 +3782,7 @@
       DTS:refId="Package\update LSET PHUGroups"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{593aeab4-c2be-4cfd-9ace-ae9e30a35bb4}"
+      DTS:DTSID="{41C0949F-3F41-4DE3-8301-1FFBFAD445E9}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update LSET PHUGroups"
@@ -3790,7 +3790,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='PHUGroups'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3798,7 +3798,7 @@
       DTS:refId="Package\update LSET PublicHealthUnit_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{6d0f4647-8a18-42f1-9f73-b72c1dccbcbc}"
+      DTS:DTSID="{637F7668-F669-4AE7-B338-5ADEC1C3A2AF}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update LSET PublicHealthUnit_Ontario"
@@ -3806,7 +3806,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='PublicHealthUnit_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3814,7 +3814,7 @@
       DTS:refId="Package\update LSET VaccinesByAge"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{64d793d9-9e56-4314-bcc2-de2d20426acd}"
+      DTS:DTSID="{D0D8331C-5389-4A16-AA5C-57EBB84A3392}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update LSET VaccinesByAge"
@@ -3822,7 +3822,7 @@
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{A8931852-F578-40C8-9D7D-FE0970463E40}"
+          SQLTask:Connection="{D64CF0F6-CE67-4A31-B767-BE49D0F075F7}"
           SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='VaccinesByAge_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3830,7 +3830,7 @@
       DTS:refId="Package\VaccinesByAge to Stage"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{0FEF5449-0255-47BD-8189-93FF2FA22F7B}"
+      DTS:DTSID="{C0A5DB11-9848-4170-9E86-8C17669C98D5}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="VaccinesByAge to Stage">
@@ -4307,235 +4307,235 @@
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint]"
       DTS:CreationName=""
-      DTS:DTSID="{73C1619A-4F30-47BB-9CAE-FC608B66D32F}"
+      DTS:DTSID="{36ED950D-EC1A-4FB6-BD8B-1307FB6E9734}"
       DTS:From="Package\Truncate CasesReports"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint"
-      DTS:To="Package\CasesReports to Stage" />
+      DTS:To="Package\get LSET, CET CasesReport_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
       DTS:CreationName=""
-      DTS:DTSID="{277D9796-F582-4FBC-94E9-D4293AAB5BC0}"
-      DTS:From="Package\Truncate CaseDetails"
+      DTS:DTSID="{2FB8C7C3-F3AE-4D00-8B96-587BB02449ED}"
+      DTS:From="Package\update LSET CasesReports_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 1"
-      DTS:To="Package\CaseDetails to Stage" />
+      DTS:To="Package\Truncate CaseDetails" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 10]"
       DTS:CreationName=""
-      DTS:DTSID="{2E76687F-28AB-4182-95B8-AD1E0A9F10A7}"
-      DTS:From="Package\update CET VaccinesByAge"
+      DTS:DTSID="{BD3933ED-8DAB-41A5-9E8D-D97FB9D5ECDA}"
+      DTS:From="Package\Truncate VaccinesByAge"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 10"
-      DTS:To="Package\Truncate VaccinesByAge" />
+      DTS:To="Package\get LSET, CET VaccinesByAge" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 11]"
       DTS:CreationName=""
-      DTS:DTSID="{590E2B79-D53C-4013-8C76-34FC479638B2}"
-      DTS:From="Package\update CET OngoingOutbreaks_Ontario"
+      DTS:DTSID="{DB5FF4E1-E20F-46AA-9D1D-E90BF9560E3E}"
+      DTS:From="Package\update LSET CaseDetails_Canada"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 11"
-      DTS:To="Package\Truncate OngoingOutbreaks" />
+      DTS:To="Package\Truncate VaccinesByAge" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 12]"
       DTS:CreationName=""
-      DTS:DTSID="{7A881D0D-EC4E-43A2-818D-B1BB2F51DCC9}"
-      DTS:From="Package\OngoingOutbreaks to Stage"
+      DTS:DTSID="{2296BC10-2456-4EBC-A420-33678DA0475A}"
+      DTS:From="Package\Truncate OngoingOutbreaks"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 12"
       DTS:To="Package\get LSET, CET OngoingOutbreaks_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 13]"
       DTS:CreationName=""
-      DTS:DTSID="{FEEDDC4A-7F89-426F-BA56-BDBE6DEC36BE}"
+      DTS:DTSID="{2739913B-1B5D-4A1A-8314-42F5BABB856D}"
       DTS:From="Package\get LSET, CET OngoingOutbreaks_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 13"
-      DTS:To="Package\update LSET OngoingOutbreaks_Ontario" />
+      DTS:To="Package\update CET OngoingOutbreaks_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 14]"
       DTS:CreationName=""
-      DTS:DTSID="{2AD4F90D-202A-478B-8E45-CAC3A07C84A3}"
-      DTS:From="Package\update CET PHUGroups"
+      DTS:DTSID="{1A65C02C-4333-44E1-B784-7015AF4A6E98}"
+      DTS:From="Package\update LSET OngoingOutbreaks_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 14"
       DTS:To="Package\Truncate PHUGroups" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 15]"
       DTS:CreationName=""
-      DTS:DTSID="{719210D5-6F49-4677-9A3C-8D752326F9DB}"
-      DTS:From="Package\PHUGroups to Stage"
+      DTS:DTSID="{9FCEBFF0-549A-48F6-B78E-91FD93D3BDF7}"
+      DTS:From="Package\Truncate PHUGroups"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 15"
       DTS:To="Package\get LSET, CET PHUGroups" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 16]"
       DTS:CreationName=""
-      DTS:DTSID="{F8ECF301-0852-4582-9F7A-5F54F8D8AC75}"
+      DTS:DTSID="{2FBFB9F8-DAAA-4980-B47A-C7E95EA9E972}"
       DTS:From="Package\get LSET, CET PHUGroups"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 16"
-      DTS:To="Package\update LSET PHUGroups" />
+      DTS:To="Package\update CET PHUGroups" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 17]"
       DTS:CreationName=""
-      DTS:DTSID="{56D06578-1719-48EC-8D03-DEA50B2529D2}"
-      DTS:From="Package\update LSET OngoingOutbreaks_Ontario"
+      DTS:DTSID="{6BAA547B-D7EA-4A23-B777-D98539A9DA7E}"
+      DTS:From="Package\update CET PHUGroups"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 17"
-      DTS:To="Package\update CET PHUGroups" />
+      DTS:To="Package\PHUGroups to Stage" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 18]"
       DTS:CreationName=""
-      DTS:DTSID="{56E6C52D-3298-426A-AADC-6B4065E1DE69}"
-      DTS:From="Package\update CET PublicHealthUnit_Ontario"
+      DTS:DTSID="{87D037B5-73B9-43AB-AF62-3D81A6FEDDE8}"
+      DTS:From="Package\update LSET PHUGroups"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 18"
       DTS:To="Package\Truncate PublicHealthUnit_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 19]"
       DTS:CreationName=""
-      DTS:DTSID="{66F00F42-A889-4B0F-8C94-7AA1ABAECFE5}"
-      DTS:From="Package\PublicHealthUnit_Ontario to Stage"
+      DTS:DTSID="{3B7C33A5-9013-4FA1-BE8C-A284062FC60E}"
+      DTS:From="Package\Truncate PublicHealthUnit_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 19"
       DTS:To="Package\get LSET, CET PublicHealthUnit_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
       DTS:CreationName=""
-      DTS:DTSID="{361A1823-8014-4E37-8ED4-40A7E3022D8D}"
-      DTS:From="Package\CasesReports to Stage"
+      DTS:DTSID="{C366CAE7-01B6-4F2D-B2AD-C29A6A086686}"
+      DTS:From="Package\get LSET, CET CasesReport_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 2"
-      DTS:To="Package\get LSET, CET CasesReport_Ontario" />
+      DTS:To="Package\update CET CasesReports_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 20]"
       DTS:CreationName=""
-      DTS:DTSID="{CE350A01-0586-47E2-8E93-C275F9249E03}"
+      DTS:DTSID="{DB8EF3BF-C484-4175-8062-CC6749F716E3}"
       DTS:From="Package\get LSET, CET PublicHealthUnit_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 20"
-      DTS:To="Package\update LSET PublicHealthUnit_Ontario" />
+      DTS:To="Package\update CET PublicHealthUnit_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 21]"
       DTS:CreationName=""
-      DTS:DTSID="{F4C33BE2-3B2F-4BE5-B434-5D871694B400}"
-      DTS:From="Package\update LSET PHUGroups"
+      DTS:DTSID="{E34D5748-37E0-479F-A32F-99639090E636}"
+      DTS:From="Package\update CET PublicHealthUnit_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 21"
-      DTS:To="Package\update CET PublicHealthUnit_Ontario" />
+      DTS:To="Package\PublicHealthUnit_Ontario to Stage" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 22]"
       DTS:CreationName=""
-      DTS:DTSID="{4B9321BF-1ACA-48DA-AA01-E3DC4426722A}"
-      DTS:From="Package\VaccinesByAge to Stage"
+      DTS:DTSID="{7CB680BE-CAC3-4C6B-B3C9-E01DBED993AA}"
+      DTS:From="Package\get LSET, CET VaccinesByAge"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 22"
-      DTS:To="Package\get LSET, CET VaccinesByAge" />
+      DTS:To="Package\update CET VaccinesByAge" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 23]"
       DTS:CreationName=""
-      DTS:DTSID="{0256F40C-C2D9-45AD-8C9E-C9B6D0A4C68D}"
-      DTS:From="Package\get LSET, CET VaccinesByAge"
+      DTS:DTSID="{AB5BD88C-5BA7-4E51-98E3-1EDE0D7511DF}"
+      DTS:From="Package\update CET VaccinesByAge"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 23"
-      DTS:To="Package\update LSET VaccinesByAge" />
+      DTS:To="Package\VaccinesByAge to Stage" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 24]"
       DTS:CreationName=""
-      DTS:DTSID="{DCDB51CF-3F0D-47DF-A6B0-465AA5A7D1F5}"
-      DTS:From="Package\update LSET VaccinesByAge"
+      DTS:DTSID="{5F7574A8-55EA-49AA-9E1C-0E830D906029}"
+      DTS:From="Package\update CET OngoingOutbreaks_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 24"
-      DTS:To="Package\update CET OngoingOutbreaks_Ontario" />
+      DTS:To="Package\OngoingOutbreaks to Stage" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 25]"
       DTS:CreationName=""
-      DTS:DTSID="{7C6688E7-2363-4373-9D89-E4E5FDCE7388}"
-      DTS:From="Package\update LSET CaseDetails_Canada"
+      DTS:DTSID="{C861C3EF-E934-4181-B80F-D77FD0724DD6}"
+      DTS:From="Package\VaccinesByAge to Stage"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 25"
-      DTS:To="Package\update CET VaccinesByAge" />
+      DTS:To="Package\update LSET VaccinesByAge" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 26]"
+      DTS:CreationName=""
+      DTS:DTSID="{F23281FE-FBC0-4849-A643-0C2D3409D0FF}"
+      DTS:From="Package\OngoingOutbreaks to Stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 26"
+      DTS:To="Package\update LSET OngoingOutbreaks_Ontario" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 27]"
+      DTS:CreationName=""
+      DTS:DTSID="{74B36580-38FE-4742-8E38-80503F6138E6}"
+      DTS:From="Package\PHUGroups to Stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 27"
+      DTS:To="Package\update LSET PHUGroups" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 28]"
+      DTS:CreationName=""
+      DTS:DTSID="{CD2FD056-25EE-4960-B23D-28F64AE857A5}"
+      DTS:From="Package\PublicHealthUnit_Ontario to Stage"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 28"
+      DTS:To="Package\update LSET PublicHealthUnit_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
       DTS:CreationName=""
-      DTS:DTSID="{B2C382C6-4D5F-4520-9D58-68B5BE37D7A0}"
-      DTS:From="Package\Truncate OngoingOutbreaks"
+      DTS:DTSID="{CC224677-7C8D-4F38-81CC-84BEC6E77AB9}"
+      DTS:From="Package\update LSET VaccinesByAge"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 3"
-      DTS:To="Package\OngoingOutbreaks to Stage" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{79CE85DC-F0E0-49F4-853D-583E6DC8A37F}"
-      DTS:From="Package\Truncate VaccinesByAge"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3 1"
-      DTS:To="Package\VaccinesByAge to Stage" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3 1 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{2D59D021-A20E-4D07-AFB5-D193124A05B9}"
-      DTS:From="Package\Truncate PublicHealthUnit_Ontario"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3 1 1"
-      DTS:To="Package\PublicHealthUnit_Ontario to Stage" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3 1 1 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{17AA1115-8641-4AA7-BFD0-B2C9DFDB0958}"
-      DTS:From="Package\Truncate PHUGroups"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3 1 1 1"
-      DTS:To="Package\PHUGroups to Stage" />
+      DTS:To="Package\Truncate OngoingOutbreaks" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
       DTS:CreationName=""
-      DTS:DTSID="{A0BA3439-D861-4B0F-B13E-93F81E708432}"
-      DTS:From="Package\update CET CaseDetails_Canada"
+      DTS:DTSID="{7879821D-DFAF-451E-B7A7-FEA07B25BAE3}"
+      DTS:From="Package\Truncate CaseDetails"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 4"
-      DTS:To="Package\Truncate CaseDetails" />
+      DTS:To="Package\get LSET, CET CaseDetails_Canada" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
       DTS:CreationName=""
-      DTS:DTSID="{DF7D14D3-4267-4176-AC94-EB22C803D320}"
-      DTS:From="Package\CaseDetails to Stage"
+      DTS:DTSID="{0D5DB122-33E9-41F4-A9FA-29ED3B28353F}"
+      DTS:From="Package\get LSET, CET CaseDetails_Canada"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 5"
-      DTS:To="Package\get LSET, CET CaseDetails_Canada" />
+      DTS:To="Package\update CET CaseDetails_Canada" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 6]"
       DTS:CreationName=""
-      DTS:DTSID="{1B5D893D-649F-4B6C-8A10-D264F3184607}"
-      DTS:From="Package\get LSET, CET CaseDetails_Canada"
+      DTS:DTSID="{E3868DBC-18C2-4AEB-A2BB-866F98B050D3}"
+      DTS:From="Package\update CET CaseDetails_Canada"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 6"
-      DTS:To="Package\update LSET CaseDetails_Canada" />
+      DTS:To="Package\CaseDetails to Stage" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 7]"
       DTS:CreationName=""
-      DTS:DTSID="{022832D9-0832-43C8-A0EB-ED8599A2C0E8}"
-      DTS:From="Package\update LSET CasesReports_Ontario"
+      DTS:DTSID="{FE8BCC3C-9D3D-430B-9FD9-7BF0964B1DEF}"
+      DTS:From="Package\update CET CasesReports_Ontario"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 7"
-      DTS:To="Package\update CET CaseDetails_Canada" />
+      DTS:To="Package\CasesReports to Stage" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 8]"
       DTS:CreationName=""
-      DTS:DTSID="{752CE86F-E479-4EE9-BE5A-B2E0B4947888}"
-      DTS:From="Package\update CET CasesReports_Ontario"
+      DTS:DTSID="{492F2D95-E34D-438F-ACEE-8E48C8231BAE}"
+      DTS:From="Package\CasesReports to Stage"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 8"
-      DTS:To="Package\Truncate CasesReports" />
+      DTS:To="Package\update LSET CasesReports_Ontario" />
     <DTS:PrecedenceConstraint
       DTS:refId="Package.PrecedenceConstraints[Constraint 9]"
       DTS:CreationName=""
-      DTS:DTSID="{82437505-A100-42A8-9B82-DFDBB7B34A08}"
-      DTS:From="Package\get LSET, CET CasesReport_Ontario"
+      DTS:DTSID="{A5F6CA4E-DB5E-40C6-8B11-DF209FCB14EC}"
+      DTS:From="Package\CaseDetails to Stage"
       DTS:LogicalAnd="True"
       DTS:ObjectName="Constraint 9"
-      DTS:To="Package\update LSET CasesReports_Ontario" />
+      DTS:To="Package\update LSET CaseDetails_Canada" />
   </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
@@ -4552,95 +4552,95 @@
         <NodeLayout
           Size="176,42.6666666666667"
           Id="Package\CaseDetails to Stage"
-          TopLeft="423.624999208376,225.583328684171" />
+          TopLeft="417.624999208376,120.583328684171" />
         <NodeLayout
           Size="185.333333333334,42.6666666666667"
           Id="Package\CasesReports to Stage"
-          TopLeft="126.374999450519,221.8499979195" />
+          TopLeft="112.374999450519,273.8499979195" />
         <NodeLayout
           Size="244,42"
           Id="Package\get LSET, CET CaseDetails_Canada"
-          TopLeft="389.5,132.75" />
+          TopLeft="388.5,278.75" />
         <NodeLayout
           Size="249.333333333334,52"
           Id="Package\get LSET, CET CasesReport_Ontario"
-          TopLeft="91,328" />
+          TopLeft="85,113" />
         <NodeLayout
           Size="277.333333333334,42"
           Id="Package\get LSET, CET OngoingOutbreaks_Ontario"
-          TopLeft="933.75,148" />
+          TopLeft="929.75,284" />
         <NodeLayout
           Size="202.666666666667,42"
           Id="Package\get LSET, CET PHUGroups"
-          TopLeft="1250,341.5" />
+          TopLeft="1246,130.5" />
         <NodeLayout
           Size="266.666666666667,42"
           Id="Package\get LSET, CET PublicHealthUnit_Ontario"
-          TopLeft="1494.5,145.5" />
+          TopLeft="1490.5,288.5" />
         <NodeLayout
           Size="218.666666666667,42"
           Id="Package\get LSET, CET VaccinesByAge"
-          TopLeft="677,340.25" />
+          TopLeft="678,123.25" />
         <NodeLayout
           Size="209.333333333334,42.6666666666667"
           Id="Package\OngoingOutbreaks to Stage"
-          TopLeft="965.499995920807,234.499996164441" />
+          TopLeft="964.499995920807,126.499996164441" />
         <NodeLayout
           Size="176,42.6666666666667"
           Id="Package\PHUGroups to Stage"
-          TopLeft="1261.12499255873,241.599994490743" />
+          TopLeft="1261.12499255873,286.599994490743" />
         <NodeLayout
           Size="238.666666666667,42"
           Id="Package\PublicHealthUnit_Ontario to Stage"
-          TopLeft="1509.49999238178,251.183331194718" />
+          TopLeft="1508.49999238178,135.183331194718" />
         <NodeLayout
           Size="178.666666666667,42.6666666666667"
           Id="Package\Truncate CaseDetails"
-          TopLeft="429.749999199063,345.099996059835" />
+          TopLeft="423.749999199063,352.099996059835" />
         <NodeLayout
           Size="186.666666666667,42"
           Id="Package\Truncate CasesReports"
-          TopLeft="117.87499945052,137.949999267757" />
+          TopLeft="111.87499945052,38.949999267757" />
         <NodeLayout
           Size="212,42.6666666666667"
           Id="Package\Truncate OngoingOutbreaks"
-          TopLeft="960.374995818362,342.149994467497" />
+          TopLeft="960.374995818362,355.149994467497" />
         <NodeLayout
           Size="178.666666666667,42.6666666666667"
           Id="Package\Truncate PHUGroups"
-          TopLeft="1261.12499250285,149.716662633519" />
+          TopLeft="1261.12499250285,44.716662633519" />
         <NodeLayout
           Size="241.333333333334,42"
           Id="Package\Truncate PublicHealthUnit_Ontario"
-          TopLeft="1509.37499226071,351.99999936074" />
+          TopLeft="1506.37499226071,363.99999936074" />
         <NodeLayout
           Size="194,42"
           Id="Package\Truncate VaccinesByAge"
-          TopLeft="689.624995836988,137.39999783814" />
+          TopLeft="689.624995836988,49.39999783814" />
         <NodeLayout
           Size="232,42"
           Id="Package\update CET CaseDetails_Canada"
-          TopLeft="403.5,424.75" />
+          TopLeft="394.5,201.75" />
         <NodeLayout
           Size="250.666666666667,44"
           Id="Package\update CET CasesReports_Ontario"
-          TopLeft="87,46" />
+          TopLeft="82,202" />
         <NodeLayout
           Size="265.333333333334,42"
           Id="Package\update CET OngoingOutbreaks_Ontario"
-          TopLeft="933,434" />
+          TopLeft="933,211" />
         <NodeLayout
           Size="190,42"
           Id="Package\update CET PHUGroups"
-          TopLeft="1257.75,48.5" />
+          TopLeft="1253.75,210.5" />
         <NodeLayout
           Size="254,42"
           Id="Package\update CET PublicHealthUnit_Ontario"
-          TopLeft="1505.5,440.75" />
+          TopLeft="1496.5,210.75" />
         <NodeLayout
           Size="206.666666666667,42"
           Id="Package\update CET VaccinesByAge"
-          TopLeft="688.75,40.25" />
+          TopLeft="683.75,207.25" />
         <NodeLayout
           Size="237.333333333334,42"
           Id="Package\update LSET CaseDetails_Canada"
@@ -4648,7 +4648,7 @@
         <NodeLayout
           Size="245.333333333334,42"
           Id="Package\update LSET CasesReports_Ontario"
-          TopLeft="92,418" />
+          TopLeft="87,351" />
         <NodeLayout
           Size="270,42"
           Id="Package\update LSET OngoingOutbreaks_Ontario"
@@ -4656,33 +4656,33 @@
         <NodeLayout
           Size="194.666666666667,42"
           Id="Package\update LSET PHUGroups"
-          TopLeft="1257.25,435" />
+          TopLeft="1254.25,365" />
         <NodeLayout
           Size="258.666666666667,42"
           Id="Package\update LSET PublicHealthUnit_Ontario"
-          TopLeft="1506.25,50.25" />
+          TopLeft="1503.25,50.25" />
         <NodeLayout
           Size="212,42"
           Id="Package\update LSET VaccinesByAge"
-          TopLeft="674,433" />
+          TopLeft="682,357" />
         <NodeLayout
           Size="192,42.6666666666667"
           Id="Package\VaccinesByAge to Stage"
-          TopLeft="693.749995883554,224.499999535084" />
+          TopLeft="685.749995883554,279.499999535084" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="215.12499945052,179.949999267757">
+          TopLeft="207.43749972526,80.949999267757">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,41.899998651743"
+              EndConnector="0,32.050000732243"
               Start="0,0"
-              End="0,34.399998651743">
+              End="0,24.550000732243">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,34.399998651743" />
+                    End="0,24.550000732243" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4693,18 +4693,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="515.437499203719,345.099996059835">
+          TopLeft="332,372.799998029918">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-76.516667375664"
+              EndConnector="91.749999199063,0"
               Start="0,0"
-              End="0,-69.016667375664">
+              End="84.249999199063,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-69.016667375664" />
+                    End="84.249999199063,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4715,18 +4715,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 10]"
-          TopLeft="789.437497918494,82.25">
+          TopLeft="787.062497918494,91.39999783814">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,55.14999783814"
+              EndConnector="0,31.85000216186"
               Start="0,0"
-              End="0,47.64999783814">
+              End="0,24.35000216186">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,47.64999783814" />
+                    End="0,24.35000216186" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4737,18 +4737,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 11]"
-          TopLeft="1065.93749790918,434">
+          TopLeft="631.5,67.57499891907">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-48.850005532503"
+              EndConnector="58.124995836988,0"
               Start="0,0"
-              End="0,-41.350005532503">
+              End="50.624995836988,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-41.350005532503" />
+                    End="50.624995836988,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4759,18 +4759,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 12]"
-          TopLeft="1071.1249979604,234.499996164441">
+          TopLeft="1067.31249790918,355.149994467497">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-44.499996164441"
+              EndConnector="0,-29.149994467497"
               Start="0,0"
-              End="0,-36.999996164441">
+              End="0,-21.649994467497">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-36.999996164441" />
+                    End="0,-21.649994467497" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4781,18 +4781,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 13]"
-          TopLeft="1071.75,148">
+          TopLeft="1066.875,284">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-63"
+              EndConnector="0,-31"
               Start="0,0"
-              End="0,-55.5">
+              End="0,-23.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-55.5" />
+                    End="0,-23.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4803,18 +4803,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 14]"
-          TopLeft="1351.68749625143,90.5">
+          TopLeft="1206.25,65.1083313167595">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,59.216662633519"
+              EndConnector="54.8749925028501,0"
               Start="0,0"
-              End="0,51.716662633519">
+              End="47.3749925028501,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,51.716662633519" />
+                    End="47.3749925028501,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4825,18 +4825,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 15]"
-          TopLeft="1350.31249627937,284.599994490743">
+          TopLeft="1349.06249625143,87.716662633519">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,56.900005509257"
+              EndConnector="0,42.783337366481"
               Start="0,0"
-              End="0,49.400005509257">
+              End="0,35.283337366481">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,49.400005509257" />
+                    End="0,35.283337366481" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4847,18 +4847,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 16]"
-          TopLeft="1353.125,383.5">
+          TopLeft="1348.125,172.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,51.5"
+              EndConnector="0,38"
               Start="0,0"
-              End="0,44">
+              End="0,30.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,44" />
+                    End="0,30.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4869,18 +4869,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 17]"
-          TopLeft="1206.25,66.75">
+          TopLeft="1348.93749627936,252.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="51.5,0"
+              EndConnector="0,34.099994490743"
               Start="0,0"
-              End="44,0">
+              End="0,26.599994490743">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="44,0" />
+                    End="0,26.599994490743" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4891,18 +4891,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 18]"
-          TopLeft="1631.18749613035,440.75">
+          TopLeft="1449.25,385.49999968037">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-46.7500006392598"
+              EndConnector="57.1249922607101,0"
               Start="0,0"
-              End="0,-39.2500006392598">
+              End="49.6249922607101,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-39.2500006392598" />
+                    End="49.6249922607101,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4913,18 +4913,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 19]"
-          TopLeft="1628.49999619089,251.183331194718">
+          TopLeft="1625.43749613036,363.99999936074">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-63.683331194718"
+              EndConnector="0,-33.49999936074"
               Start="0,0"
-              End="0,-56.183331194718">
+              End="0,-25.99999936074">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-56.183331194718" />
+                    End="0,-25.99999936074" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4935,18 +4935,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="217.18749972526,264.8499979195">
+          TopLeft="208.5,165">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,63.1500020805"
+              EndConnector="0,37"
               Start="0,0"
-              End="0,55.6500020805">
+              End="0,29.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,55.6500020805" />
+                    End="0,29.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4957,18 +4957,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 20]"
-          TopLeft="1631.875,145.5">
+          TopLeft="1623.75,288.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-53.25"
+              EndConnector="0,-35.75"
               Start="0,0"
-              End="0,-45.75">
+              End="0,-28.25">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-45.75" />
+                    End="0,-28.25" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -4979,18 +4979,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 21]"
-          TopLeft="1452.25,458.875">
+          TopLeft="1625.74999619089,210.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="53.25,0"
+              EndConnector="0,-33.566668805282"
               Start="0,0"
-              End="45.75,0">
+              End="0,-26.066668805282">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="45.75,0" />
+                    End="0,-26.066668805282" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5001,18 +5001,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 22]"
-          TopLeft="788.124997941777,267.499999535084">
+          TopLeft="787.375,165.25">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,72.7500004649163"
+              EndConnector="0,42"
               Start="0,0"
-              End="0,65.2500004649163">
+              End="0,34.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,65.2500004649163" />
+                    End="0,34.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5023,18 +5023,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 23]"
-          TopLeft="783.25,382.25">
+          TopLeft="784.499997941777,249.25">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.75"
+              EndConnector="0,30.249999535084"
               Start="0,0"
-              End="0,43.25">
+              End="0,22.749999535084">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,43.25" />
+                    End="0,22.749999535084" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5045,18 +5045,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 24]"
-          TopLeft="886,454.5">
+          TopLeft="1067.2499979604,211">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="47,0"
+              EndConnector="0,-41.500003835559"
               Start="0,0"
-              End="39.5,0">
+              End="0,-34.000003835559">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="39.5,0" />
+                    End="0,-34.000003835559" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5067,18 +5067,84 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 25]"
-          TopLeft="631.5,63">
+          TopLeft="784.874997941777,322.499999535084">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="57.25,0"
+              EndConnector="0,34.500000464916"
               Start="0,0"
-              End="49.75,0">
+              End="0,27.000000464916">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="49.75,0" />
+                    End="0,27.000000464916" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 26]"
+          TopLeft="1070.1249979604,126.499996164441">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-41.499996164441"
+              Start="0,0"
+              End="0,-33.999996164441">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-33.999996164441" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 27]"
+          TopLeft="1350.43749627936,329.599994490743">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,35.400005509257"
+              Start="0,0"
+              End="0,27.900005509257">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.900005509257" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 28]"
+          TopLeft="1630.37499619089,135.183331194718">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,-42.933331194718"
+              Start="0,0"
+              End="0,-35.433331194718">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,-35.433331194718" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5089,84 +5155,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="1068.18749586958,342.149994467497">
+          TopLeft="894,377.324997233748">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-64.649998303056"
+              EndConnector="66.3749958183621,0"
               Start="0,0"
-              End="0,-57.149998303056">
+              End="58.8749958183621,0">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-57.149998303056" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3 1]"
-          TopLeft="788.187495860271,179.39999783814">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,45.1000016969437"
-              Start="0,0"
-              End="0,37.6000016969437">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,37.6000016969437" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3 1 1]"
-          TopLeft="1629.43749232124,351.99999936074">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,-58.8166681660222"
-              Start="0,0"
-              End="0,-51.3166681660222">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,-51.3166681660222" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3 1 1 1]"
-          TopLeft="1349.87499253079,192.716662633519">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,48.8833318572239"
-              Start="0,0"
-              End="0,41.3833318572239">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,41.3833318572239" />
+                    End="58.8749958183621,0" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5177,18 +5177,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="519.374999599531,424.75">
+          TopLeft="511.874999599532,352.099996059835">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-36.650003940165"
+              EndConnector="0,-31.349996059835"
               Start="0,0"
-              End="0,-29.150003940165">
+              End="0,-23.849996059835">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-29.150003940165" />
+                    End="0,-23.849996059835" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5199,18 +5199,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="511.562499604188,225.583328684171">
+          TopLeft="510.5,278.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-50.833328684171"
+              EndConnector="0,-35"
               Start="0,0"
-              End="0,-43.333328684171">
+              End="0,-27.5">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-43.333328684171" />
+                    End="0,-27.5" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5221,18 +5221,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 6]"
-          TopLeft="512.25,132.75">
+          TopLeft="508.062499604188,201.75">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,-47"
+              EndConnector="0,-38.166671315829"
               Start="0,0"
-              End="0,-39.5">
+              End="0,-30.666671315829">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,-39.5" />
+                    End="0,-30.666671315829" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5243,18 +5243,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 7]"
-          TopLeft="337.333333333333,442.375">
+          TopLeft="206.187499725259,246">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="66.1666666666666,0"
+              EndConnector="0,27.8499979195"
               Start="0,0"
-              End="58.6666666666666,0">
+              End="0,20.3499979195">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="58.6666666666666,0" />
+                    End="0,20.3499979195" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5265,18 +5265,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 8]"
-          TopLeft="211.93749972526,90">
+          TopLeft="207.187499725259,316.8499979195">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,47.949999267757"
+              EndConnector="0,34.1500020805"
               Start="0,0"
-              End="0,40.449999267757">
+              End="0,26.6500020805">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,40.449999267757" />
+                    End="0,26.6500020805" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5287,18 +5287,18 @@
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 9]"
-          TopLeft="215.166666666667,380">
+          TopLeft="509.312499604188,120.583328684171">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,38.0000000000001"
+              EndConnector="0,-34.833328684171"
               Start="0,0"
-              End="0,30.5000000000001">
+              End="0,-27.333328684171">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,30.5000000000001" />
+                    End="0,-27.333328684171" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -5419,13 +5419,13 @@
     design-time-name="Package\CasesReports to Stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,43"
+          Size="172,42.6666666666667"
           Id="Package\CasesReports to Stage\OLE DB Destination"
           TopLeft="318.124995259568,179.399996792078" />
         <NodeLayout
-          Size="152,43"
+          Size="152,42.6666666666667"
           Id="Package\CasesReports to Stage\Flat File Source"
           TopLeft="338.749994952232,56.5499989888072" />
         <EdgeLayout
@@ -5459,9 +5459,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
@@ -5663,7 +5661,7 @@
     design-time-name="Package\PublicHealthUnit_Ontario to Stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,42.6666666666667"
           Id="Package\PublicHealthUnit_Ontario to Stage\OLE DB Destination"
@@ -5707,9 +5705,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
@@ -5743,9 +5739,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
