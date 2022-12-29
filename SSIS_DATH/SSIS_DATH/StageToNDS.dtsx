@@ -1,11 +1,11 @@
-﻿<?xml version="1.0"?>
+<?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
   DTS:CreationDate="12/26/2022 3:16:23 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="DESKTOP-V6HNNLJ"
   DTS:CreatorName="DESKTOP-V6HNNLJ\18120"
-  DTS:DTSID="{7A64C8F7-97DD-44F0-A83E-263EE9DAB663}"
+  DTS:DTSID="{613ACBD7-AF56-4CC0-9911-66E96C8FE5DC}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.845.0"
   DTS:LocaleID="1033"
@@ -19,37 +19,37 @@
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.CovidCases]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{417DFE40-BA0B-4501-9F07-4877618E47AF}"
+      DTS:DTSID="{D6B012FB-5DF0-49A7-A64E-884165E57D0F}"
       DTS:ObjectName="localhost.CovidCases">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=CovidCases;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{417DFE40-BA0B-4501-9F07-4877618E47AF}localhost.CovidCases;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=CovidCases;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{D6B012FB-5DF0-49A7-A64E-884165E57D0F}localhost.CovidCases;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[localhost.CovidCases_NDS]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{3B99C41A-0ED6-42DA-AB96-CC25C0F94260}"
+      DTS:DTSID="{B6439857-8E42-4CA6-9960-3996D1202811}"
       DTS:ObjectName="localhost.CovidCases_NDS">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=localhost;Initial Catalog=CovidCases_NDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{3B99C41A-0ED6-42DA-AB96-CC25C0F94260}localhost.CovidCases_NDS;" />
+          DTS:ConnectionString="Data Source=localhost;Initial Catalog=CovidCases_NDS;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;Application Name=SSIS-Package1-{B6439857-8E42-4CA6-9960-3996D1202811}localhost.CovidCases_NDS;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.METADATA]"
       DTS:CreationName="OLEDB"
-      DTS:DTSID="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
+      DTS:DTSID="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
       DTS:ObjectName="LocalHost.METADATA">
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="1"
           DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=.;Initial Catalog=METADATA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}LocalHost.METADATA;Auto Translate=False;" />
+          DTS:ConnectionString="Data Source=.;Initial Catalog=METADATA;Provider=SQLNCLI11.1;Integrated Security=SSPI;Application Name=SSIS-Package1-{DFBC2383-4A43-427D-A5A2-0E5280E777F0}LocalHost.METADATA;Auto Translate=False;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
@@ -59,7 +59,7 @@
       DTS:refId="Package\CaseDetails_Canada to CovidCases"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{9CAC2538-4E6A-4593-A6F3-285E49B5DC3F}"
+      DTS:DTSID="{0DC3BB10-45A0-411D-A958-17280F455BC7}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="CaseDetails_Canada to CovidCases"
@@ -2570,15 +2570,15 @@ where [refTable].[PHU_ID] = ? and [refTable].[Date_id] = ? and [refTable].[Expos
       DTS:refId="Package\get LSET, CET CaseDetails_Canada"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{c0aff361-7f09-4c38-b2c2-50f4d8e8a136}"
+      DTS:DTSID="{03D35FFC-9780-40A9-9D91-A7D85CF15AB6}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET CaseDetails_Canada"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
           SQLTask:SqlStatementSource="SELECT LSET,CET &#xA;FROM Data_Flow&#xA;WHERE TenBang = 'CaseDetails_Canada'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2586,16 +2586,32 @@ where [refTable].[PHU_ID] = ? and [refTable].[Date_id] = ? and [refTable].[Expos
       DTS:refId="Package\get LSET, CET PHUGroups"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{a515ea24-a90b-47bd-aad7-f138c36d1f02}"
+      DTS:DTSID="{F5F82403-5B41-4D9D-A928-C92884DCE5EA}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET PHUGroups"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
+          SQLTask:SqlStatementSource="SELECT  LSET,CET &#xA;FROM Data_Flow&#xA;WHERE TenBang = 'PHUGroups'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\get LSET, CET PublicHealthUnit"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{FCFCAB3E-C3EB-40C4-85B2-6B158D84B817}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="get LSET, CET PublicHealthUnit"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
-          SQLTask:SqlStatementSource="SELECT  LSET,CET &#xA;FROM Data_Flow&#xA;WHERE TenBang = 'PHUGroups'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
+          SQLTask:SqlStatementSource="SELECT LSET,CET &#xA;FROM Data_Flow&#xA;WHERE TenBang = 'PublicHealthUnit'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -2618,15 +2634,15 @@ where [refTable].[PHU_ID] = ? and [refTable].[Date_id] = ? and [refTable].[Expos
       DTS:refId="Package\get LSET, CET PublicHealthUnit_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{2ae0566e-e381-4a6f-a26c-e406069ca042}"
+      DTS:DTSID="{20F46E85-B544-4EA5-88D0-A801E990A9DD}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="get LSET, CET PublicHealthUnit_Ontario"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
           SQLTask:SqlStatementSource="SELECT LSET,CET &#xA;FROM Data_Flow&#xA;WHERE TenBang = 'PublicHealthUnit_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -2634,7 +2650,7 @@ where [refTable].[PHU_ID] = ? and [refTable].[Date_id] = ? and [refTable].[Expos
       DTS:refId="Package\PublicHealthUnit_Ontario to PHU"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{3BAF3E49-AD69-44A1-9A8F-6C34C795B35E}"
+      DTS:DTSID="{1DA42DE6-58C2-4CE1-8465-B382405D1E74}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
       DTS:ObjectName="PublicHealthUnit_Ontario to PHU"
@@ -3799,15 +3815,31 @@ where [refTable].[PHU] = ?</property>
       DTS:refId="Package\update CET PHUGroups"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{187960ea-11c4-4634-b017-9b58eb8101bb}"
+      DTS:DTSID="{5D37B066-66B0-41BF-A7DE-CCF361B9865E}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="update CET PHUGroups"
+      DTS:ObjectName="update CET CaseDetails_Canada"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
+          SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='CaseDetails_Canada'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\update CET PHUGroups"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{FE730F0A-8E67-4B6A-BA0D-4CD007267ECF}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="update CET PHUGroups"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
           SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='PHUGroups'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3815,15 +3847,15 @@ where [refTable].[PHU] = ?</property>
       DTS:refId="Package\update CET PublicHealthUnit"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8b3f35d8-0bbe-482e-aaec-102b39b45270}"
+      DTS:DTSID="{B286F4BC-2AF5-48F9-B5F0-4C14C457DDEA}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update CET PublicHealthUnit"
-      DTS:ThreadHint="1">
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
           SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='PublicHealthUnit'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
@@ -3831,16 +3863,32 @@ where [refTable].[PHU] = ?</property>
       DTS:refId="Package\update CET PublicHealthUnit_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{d62b1a17-cfc6-428d-86e6-31d9b2d02606}"
+      DTS:DTSID="{4DE3BD80-57A0-424C-9014-E1C7DCA8882B}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update CET PublicHealthUnit_Ontario"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
+          SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='PublicHealthUnit_Ontario'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\update LSET CaseDetails_Canada"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{B067CADC-8B51-4E37-B9D3-1ADFF032A882}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="update LSET CaseDetails_Canada"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
-          SQLTask:SqlStatementSource="update Data_flow set CET = GETDATE() where tenbang='PublicHealthUnit_Ontario'&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
+          SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='CaseDetails_Canada'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -3863,16 +3911,32 @@ where [refTable].[PHU] = ?</property>
       DTS:refId="Package\update LSET PHUGroups"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{8ca37624-d972-4859-a7a4-7bfe69ac9859}"
+      DTS:DTSID="{35F18E8C-D284-46C1-9091-9997B1AE70D7}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update LSET PHUGroups"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
+          SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='PHUGroups'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\update LSET PublicHealthUnit"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{E49B54BD-07A8-42B1-BFCC-FF017BEC062F}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="update LSET PublicHealthUnit"
       DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
-          SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='PHUGroups'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
+          SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='PublicHealthUnit'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
     <DTS:Executable
@@ -3895,15 +3959,15 @@ where [refTable].[PHU] = ?</property>
       DTS:refId="Package\update LSET PublicHealthUnit_Ontario"
       DTS:CreationName="Microsoft.ExecuteSQLTask"
       DTS:Description="Execute SQL Task"
-      DTS:DTSID="{dc72d546-f069-4d98-ba27-7c6b5ad5e110}"
+      DTS:DTSID="{6FAC90BA-7DB8-4520-BFF0-DB05F5DD0E3D}"
       DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
       DTS:ObjectName="update LSET PublicHealthUnit_Ontario"
-      DTS:ThreadHint="0">
+      DTS:ThreadHint="1">
       <DTS:Variables />
       <DTS:ObjectData>
         <SQLTask:SqlTaskData
-          SQLTask:Connection="{5C4F4106-89A0-43CB-83CF-37A5BD043CF9}"
+          SQLTask:Connection="{DFBC2383-4A43-427D-A5A2-0E5280E777F0}"
           SQLTask:SqlStatementSource="update Data_flow &#xA;set LSET = CET &#xA;Where tenbang='PublicHealthUnit_Ontario'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
