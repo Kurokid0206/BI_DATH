@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-UJGB2MI\OXI PC"
   DTS:DTSID="{58787DFA-E90D-4852-B52A-B9888094F284}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.948.0"
+  DTS:LastModifiedProductVersion="16.0.845.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="52"
-  DTS:VersionGUID="{ACE0344E-4624-4C53-8A26-754F5D242006}">
+  DTS:VersionBuild="53"
+  DTS:VersionGUID="{D6DC1105-ACAD-49DE-BE81-C29C09192320}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -13259,51 +13259,51 @@ GROUP BY [Date], PHUID</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="152,43"
+          Size="152,42.6666666666667"
           Id="Package\Data Flow Task"
           TopLeft="479.999992847443,105.949998105466" />
         <NodeLayout
-          Size="145,43"
+          Size="145.333333333334,42.6666666666667"
           Id="Package\DimAgeGroup"
           TopLeft="253.124996228144,107.249998082221" />
         <NodeLayout
-          Size="120,43"
+          Size="120,42.6666666666667"
           Id="Package\DimDate"
           TopLeft="265.624996041879,36.3999993491172" />
         <NodeLayout
-          Size="171,43"
+          Size="170.666666666667,42.6666666666667"
           Id="Package\DimOutbreakGroup"
           TopLeft="247.499996311963,245.049995618165" />
         <NodeLayout
-          Size="169,43"
+          Size="169.333333333334,42.6666666666667"
           Id="Package\DimPublicHeatlUnit"
           TopLeft="240.624996414408,175.499996861816" />
         <NodeLayout
-          Size="138,43"
+          Size="138,42.6666666666667"
           Id="Package\FactInfected"
           TopLeft="486.24999275431,175.499996861816" />
         <NodeLayout
-          Size="143,43"
+          Size="142.666666666667,42.6666666666667"
           Id="Package\FactOutBreak"
           TopLeft="486.874992744997,245.049995618165" />
         <NodeLayout
-          Size="151,43"
+          Size="150.666666666667,42.6666666666667"
           Id="Package\FactVaccinated"
           TopLeft="484.999992772938,40.2999992793799" />
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="325.708329468345,79.0666660157838">
+          TopLeft="325.708329468345,79.0666660157839">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,28.1833320664368"
+              EndConnector="0,28.1833320664371"
               Start="0,0"
-              End="0,20.6833320664368">
+              End="0,20.6833320664371">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,20.6833320664368" />
+                    End="0,20.6833320664371" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -13336,7 +13336,7 @@ GROUP BY [Date], PHUID</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="325.541662987943,149.916664748887">
+          TopLeft="325.541662987943,149.916664748888">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
