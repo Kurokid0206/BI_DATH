@@ -28,3 +28,21 @@ CREATE TABLE CovidCases(
 	CONSTRAINT PK_CovidCases PRIMARY KEY(Case_id),
 	CONSTRAINT FK_CC_PHU FOREIGN KEY(PHU_ID) REFERENCES PublicHealthUnit
 )
+
+create table VaccinesByAge_Ontario
+(
+	Date date ,
+	PHUID char(4),
+	Agegroup varchar(30),
+	At_least_one_dose_cumulative int,
+	Second_dose_cumulative int,
+	fully_vaccinated_cumulative int,
+	third_dose_cumulative int
+)
+
+create table OngoingOutbreaks_Ontario(
+	date date,
+	phu_num char(4),
+	outbreak_group varchar(20),
+	number_ongoing_outbreaks int
+)
