@@ -7,12 +7,12 @@
   DTS:CreatorName="DESKTOP-UJGB2MI\OXI PC"
   DTS:DTSID="{E2B57A22-B50E-47F5-978C-47D79C9CAAB3}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="16.0.845.0"
+  DTS:LastModifiedProductVersion="16.0.948.0"
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="48"
-  DTS:VersionGUID="{565AB678-1471-4356-9773-7F10053828E3}">
+  DTS:VersionBuild="52"
+  DTS:VersionGUID="{76B6D02F-C0C5-4CB4-AA08-10534F4F8863}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -30,7 +30,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\School\BI\Source\Cases Report.csv">
+          DTS:ConnectionString="D:\Workplace\Learning\HCMUS\22_23\BI\Đồ án TH\Datasource\Cases Report.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Outcome"
-              DTS:DTSID="{96C22FF6-F4C5-4FE7-A535-6BEF95DB827D}"
+              DTS:DTSID="{56040FAD-76C5-4CD6-83C3-30E99586043A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Age"
-              DTS:DTSID="{DA00741A-031C-41A2-A7E6-F54CC42A7D9D}"
+              DTS:DTSID="{1D011B68-5469-4ED7-952E-0973E1CD9E4A}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -57,7 +57,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Gender"
-              DTS:DTSID="{98506A08-04BA-414D-A97B-E5FD2C96FD6B}"
+              DTS:DTSID="{366C08D8-7B8E-4FD5-AA8C-CB1072E85588}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -66,7 +66,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Reporting PHU"
-              DTS:DTSID="{965B4F5F-4C4F-4D67-9D12-E29D6267E10F}"
+              DTS:DTSID="{7DEAB36E-9FB8-4462-9868-6463731E9F59}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -75,7 +75,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="SpecimenDate"
-              DTS:DTSID="{D31845AF-8981-4A9C-BA43-968AF80C13DB}"
+              DTS:DTSID="{45B4ABE9-9DB0-4536-AF87-E5CD0889D741}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -84,7 +84,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CaseReported Date"
-              DTS:DTSID="{03BFF1BA-828E-489C-B06B-677BE7F7021D}"
+              DTS:DTSID="{DD9C8423-9DE2-4A2D-B7ED-2C3E0D49E5B6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -93,7 +93,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHUCity"
-              DTS:DTSID="{8A91B602-F043-4B27-A299-58B70CE25D8D}"
+              DTS:DTSID="{6449CD6B-E192-409C-8600-028673FAC784}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -102,7 +102,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="TestReported Date"
-              DTS:DTSID="{F4F1F596-D874-4263-BF65-19C028E59C91}"
+              DTS:DTSID="{DAB0AD4A-872E-48C2-B40D-73E6666F950D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -111,7 +111,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="CaseAcquisition info"
-              DTS:DTSID="{6FB6F534-672B-4839-AA5E-E646F492CA54}"
+              DTS:DTSID="{9B996C5C-6F66-4530-81EA-56C3A11BDDB6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -120,7 +120,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="AccurateEpisode Dt"
-              DTS:DTSID="{6C384681-EC23-4FE9-BBE5-02D765B4D208}"
+              DTS:DTSID="{C0B662A2-578B-4ACE-A248-39A38B0934E2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -129,7 +129,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Address"
-              DTS:DTSID="{3FE741F1-5C0C-480F-B07F-EA68C24D7507}"
+              DTS:DTSID="{EB90F8C3-90D8-4DF7-B8FA-C6866D85AF3E}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -138,7 +138,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Website"
-              DTS:DTSID="{ACE22517-71ED-49EA-9113-05C72269E6A9}"
+              DTS:DTSID="{3C3F4B73-6CE8-4C63-A9D3-A9B053AC39C6}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -147,7 +147,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="OutbreakRelated"
-              DTS:DTSID="{8D8B95DF-3FBB-416D-99EE-F5CB835667E0}"
+              DTS:DTSID="{409D778F-24B1-448F-8668-F3BCB4AA7901}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -156,7 +156,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Latitude"
-              DTS:DTSID="{A86739AB-DCD4-4371-A36D-A98A684A71DF}"
+              DTS:DTSID="{FC95CDF3-0118-4CA0-B002-CCFAFC769E61}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -165,7 +165,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Longitude"
-              DTS:DTSID="{0D628F29-7BBC-4427-A762-840EB339B368}"
+              DTS:DTSID="{CF9FD12B-7489-4502-B1A9-35EEDEC0AFB2}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -174,7 +174,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU Postal Code"
-              DTS:DTSID="{FE125CC8-0776-4634-9AA9-EA2FFB93B5B4}"
+              DTS:DTSID="{5A8B9996-DD43-4A39-9441-06B66E9FE005}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -194,7 +194,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\School\BI\Source\Compiled_COVID-19_Case_Details_(Canada).csv">
+          DTS:ConnectionString="D:\Workplace\Learning\HCMUS\22_23\BI\Đồ án TH\Datasource\Compiled_COVID-19_Case_Details_(Canada).csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -203,7 +203,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="ObjectId"
-              DTS:DTSID="{7614CF53-AA9F-4EDC-B982-E7AE749FD02D}"
+              DTS:DTSID="{E569C885-E6F9-4C0E-900D-365DA37E3A45}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -212,7 +212,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="row_id"
-              DTS:DTSID="{3F96B2C2-BF89-4379-983B-185DDDE44A8C}"
+              DTS:DTSID="{A9B3C10B-A0C3-4A3D-AECE-830FCD91F251}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -221,7 +221,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="date_reported"
-              DTS:DTSID="{48771F0E-71AE-4905-8D5D-56E5CBC07079}"
+              DTS:DTSID="{0AFE98B1-3EB3-4EC9-A788-AAEAF815FD00}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -230,7 +230,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="health_region"
-              DTS:DTSID="{27E0F2FE-0E7E-491E-8C7C-5BB58C7CE2EA}"
+              DTS:DTSID="{0DDC72DC-C0F4-44EA-A45E-9BA71207018B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -239,7 +239,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="age_group"
-              DTS:DTSID="{E5FB8F08-C36E-4E54-BEBE-869DD4D9BF98}"
+              DTS:DTSID="{E87A2F7F-1DA5-4AD0-9C46-49E00B787D39}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -248,7 +248,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="gender"
-              DTS:DTSID="{C06F73DA-49D8-47C8-A17D-607A74B3CDFA}"
+              DTS:DTSID="{B3B2EE0E-29A4-4D13-836E-A82901CB132D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -257,7 +257,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="exposure"
-              DTS:DTSID="{7289289A-2AC6-4365-B833-71D64A8DA90B}"
+              DTS:DTSID="{901B4560-6413-4C96-919E-9B5F3B4AE5F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -266,7 +266,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="case_status"
-              DTS:DTSID="{626229D4-1DF4-4380-9B27-21753592311A}"
+              DTS:DTSID="{8761EA30-0C20-4948-8848-6B49E82504B9}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -275,7 +275,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="province"
-              DTS:DTSID="{D2FDEA2E-F437-4161-B0EE-D0DD270E7EDB}"
+              DTS:DTSID="{46015DBB-5A23-46F4-898C-A039BAC15D3F}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -319,7 +319,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x0022_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\School\BI\Source\ongoing_outbreaks_phu.csv">
+          DTS:ConnectionString="D:\Workplace\Learning\HCMUS\22_23\BI\Đồ án TH\Datasource\ongoing_outbreaks_phu.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -328,7 +328,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="date"
-              DTS:DTSID="{ADC4E845-2CC4-40CC-809A-84EAE79C9F81}"
+              DTS:DTSID="{E92B8F66-E003-4B98-9A28-2E5FD021D209}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -337,7 +337,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="phu_num"
-              DTS:DTSID="{1A7ED41D-B70D-4F33-8A07-FA12DFA7E9F7}"
+              DTS:DTSID="{B291642A-CE69-426A-89FA-AE1DAFC763EB}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -346,7 +346,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="outbreak_group"
-              DTS:DTSID="{DD51A192-C216-4F5C-97CE-EFFB55655520}"
+              DTS:DTSID="{EB2C33A5-DD8D-468B-A3F6-87938C09D418}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -355,7 +355,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="number_ongoing_outbreaks"
-              DTS:DTSID="{625FEBBC-3F84-46D1-BB27-DFAE485E23CB}"
+              DTS:DTSID="{28FCA4AA-9E0E-4160-A4C4-D63BE2604016}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -370,7 +370,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\School\BI\Source\Public health unit.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Workplace\Learning\HCMUS\22_23\BI\Đồ án TH\Datasource\Public health unit.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -382,7 +382,7 @@
         <DTS:ConnectionManager
           DTS:ConnectRetryCount="0"
           DTS:ConnectRetryInterval="0"
-          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\School\BI\Source\Public Health Units GROUP.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
+          DTS:ConnectionString="Provider=Microsoft.ACE.OLEDB.12.0;Data Source=D:\Workplace\Learning\HCMUS\22_23\BI\Đồ án TH\Datasource\Public Health Units GROUP.xlsx;Extended Properties=&quot;EXCEL 12.0 XML;HDR=YES&quot;;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -399,7 +399,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\School\BI\Source\vaccines_by_age_phu.csv">
+          DTS:ConnectionString="D:\Workplace\Learning\HCMUS\22_23\BI\Đồ án TH\Datasource\vaccines_by_age_phu.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -408,7 +408,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Date"
-              DTS:DTSID="{96F5BE54-3F6A-4C8D-96FD-58805B588BEE}"
+              DTS:DTSID="{ECD9103F-E655-44D1-BBF5-04C5E7400563}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -417,7 +417,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="PHU ID"
-              DTS:DTSID="{6352A0C4-CA1D-4D7F-9AD2-A2AEFC97F06C}"
+              DTS:DTSID="{999ACAB3-3FC5-4CDA-A8C0-B97D8F1A2745}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -426,7 +426,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Agegroup"
-              DTS:DTSID="{181C8E90-AA4E-4370-8542-CECBF813181D}"
+              DTS:DTSID="{7D306C7D-5FBE-491A-A328-B8EB10DA67D1}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -435,7 +435,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="At least one dose_cumulative"
-              DTS:DTSID="{BF667BDA-F6C0-494C-AE24-AA020E92945C}"
+              DTS:DTSID="{36957811-73B8-4465-8B6E-8190F5ED98F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -444,7 +444,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="Second_dose_cumulative"
-              DTS:DTSID="{E10F5DA9-4A33-4B2C-8272-69424EEA55F8}"
+              DTS:DTSID="{69BE47B4-ED36-479D-B221-C5B9DF4EAE0D}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -453,7 +453,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="fully_vaccinated_cumulative"
-              DTS:DTSID="{156F9729-1A5B-4ADE-98C5-90D9699BAF38}"
+              DTS:DTSID="{BE7604D2-889D-453A-BAFF-FF681F726B0B}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -462,7 +462,7 @@
               DTS:DataType="129"
               DTS:TextQualified="True"
               DTS:ObjectName="third_dose_cumulative"
-              DTS:DTSID="{1799AA30-FFAD-4B08-9936-4A740E305D43}"
+              DTS:DTSID="{BA3F02AF-DDB3-4C41-8D8D-5C800619586A}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -4550,11 +4550,11 @@
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="176,42.6666666666667"
+          Size="176,43"
           Id="Package\CaseDetails to Stage"
           TopLeft="417.624999208376,120.583328684171" />
         <NodeLayout
-          Size="185.333333333334,42.6666666666667"
+          Size="185,43"
           Id="Package\CasesReports to Stage"
           TopLeft="112.374999450519,273.8499979195" />
         <NodeLayout
@@ -4562,57 +4562,57 @@
           Id="Package\get LSET, CET CaseDetails_Canada"
           TopLeft="388.5,278.75" />
         <NodeLayout
-          Size="249.333333333334,52"
+          Size="249,52"
           Id="Package\get LSET, CET CasesReport_Ontario"
           TopLeft="85,113" />
         <NodeLayout
-          Size="277.333333333334,42"
+          Size="277,42"
           Id="Package\get LSET, CET OngoingOutbreaks_Ontario"
           TopLeft="929.75,284" />
         <NodeLayout
-          Size="202.666666666667,42"
-          Id="Package\get LSET, CET PHUGroups"
-          TopLeft="1246,130.5" />
-        <NodeLayout
-          Size="266.666666666667,42"
+          Size="267,42"
           Id="Package\get LSET, CET PublicHealthUnit_Ontario"
           TopLeft="1490.5,288.5" />
         <NodeLayout
-          Size="218.666666666667,42"
+          Size="203,42"
+          Id="Package\get LSET, CET PHUGroups"
+          TopLeft="1246,130.5" />
+        <NodeLayout
+          Size="219,42"
           Id="Package\get LSET, CET VaccinesByAge"
           TopLeft="678,123.25" />
         <NodeLayout
-          Size="209.333333333334,42.6666666666667"
+          Size="209,43"
           Id="Package\OngoingOutbreaks to Stage"
           TopLeft="964.499995920807,126.499996164441" />
         <NodeLayout
-          Size="176,42.6666666666667"
-          Id="Package\PHUGroups to Stage"
-          TopLeft="1261.12499255873,286.599994490743" />
-        <NodeLayout
-          Size="238.666666666667,42"
+          Size="239,42"
           Id="Package\PublicHealthUnit_Ontario to Stage"
           TopLeft="1508.49999238178,135.183331194718" />
         <NodeLayout
-          Size="178.666666666667,42.6666666666667"
+          Size="176,43"
+          Id="Package\PHUGroups to Stage"
+          TopLeft="1261.12499255873,286.599994490743" />
+        <NodeLayout
+          Size="179,43"
           Id="Package\Truncate CaseDetails"
           TopLeft="423.749999199063,352.099996059835" />
         <NodeLayout
-          Size="186.666666666667,42"
+          Size="187,42"
           Id="Package\Truncate CasesReports"
           TopLeft="111.87499945052,38.949999267757" />
         <NodeLayout
-          Size="212,42.6666666666667"
+          Size="212,43"
           Id="Package\Truncate OngoingOutbreaks"
           TopLeft="960.374995818362,355.149994467497" />
         <NodeLayout
-          Size="178.666666666667,42.6666666666667"
-          Id="Package\Truncate PHUGroups"
-          TopLeft="1261.12499250285,44.716662633519" />
-        <NodeLayout
-          Size="241.333333333334,42"
+          Size="241,42"
           Id="Package\Truncate PublicHealthUnit_Ontario"
           TopLeft="1506.37499226071,363.99999936074" />
+        <NodeLayout
+          Size="179,43"
+          Id="Package\Truncate PHUGroups"
+          TopLeft="1261.12499250285,44.716662633519" />
         <NodeLayout
           Size="194,42"
           Id="Package\Truncate VaccinesByAge"
@@ -4622,31 +4622,31 @@
           Id="Package\update CET CaseDetails_Canada"
           TopLeft="394.5,201.75" />
         <NodeLayout
-          Size="250.666666666667,44"
+          Size="251,44"
           Id="Package\update CET CasesReports_Ontario"
           TopLeft="82,202" />
         <NodeLayout
-          Size="265.333333333334,42"
+          Size="265,42"
           Id="Package\update CET OngoingOutbreaks_Ontario"
           TopLeft="933,211" />
-        <NodeLayout
-          Size="190,42"
-          Id="Package\update CET PHUGroups"
-          TopLeft="1253.75,210.5" />
         <NodeLayout
           Size="254,42"
           Id="Package\update CET PublicHealthUnit_Ontario"
           TopLeft="1496.5,210.75" />
         <NodeLayout
-          Size="206.666666666667,42"
+          Size="190,42"
+          Id="Package\update CET PHUGroups"
+          TopLeft="1253.75,210.5" />
+        <NodeLayout
+          Size="207,42"
           Id="Package\update CET VaccinesByAge"
           TopLeft="683.75,207.25" />
         <NodeLayout
-          Size="237.333333333334,42"
+          Size="237,42"
           Id="Package\update LSET CaseDetails_Canada"
           TopLeft="394.5,43.75" />
         <NodeLayout
-          Size="245.333333333334,42"
+          Size="245,42"
           Id="Package\update LSET CasesReports_Ontario"
           TopLeft="87,351" />
         <NodeLayout
@@ -4654,19 +4654,19 @@
           Id="Package\update LSET OngoingOutbreaks_Ontario"
           TopLeft="936.25,43" />
         <NodeLayout
-          Size="194.666666666667,42"
-          Id="Package\update LSET PHUGroups"
-          TopLeft="1254.25,365" />
-        <NodeLayout
-          Size="258.666666666667,42"
+          Size="259,42"
           Id="Package\update LSET PublicHealthUnit_Ontario"
           TopLeft="1503.25,50.25" />
+        <NodeLayout
+          Size="195,42"
+          Id="Package\update LSET PHUGroups"
+          TopLeft="1254.25,365" />
         <NodeLayout
           Size="212,42"
           Id="Package\update LSET VaccinesByAge"
           TopLeft="682,357" />
         <NodeLayout
-          Size="192,42.6666666666667"
+          Size="192,43"
           Id="Package\VaccinesByAge to Stage"
           TopLeft="685.749995883554,279.499999535084" />
         <EdgeLayout
@@ -5421,11 +5421,11 @@
       <GraphLayout
         Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="172,42.6666666666667"
+          Size="172,43"
           Id="Package\CasesReports to Stage\OLE DB Destination"
           TopLeft="318.124995259568,179.399996792078" />
         <NodeLayout
-          Size="152,42.6666666666667"
+          Size="152,43"
           Id="Package\CasesReports to Stage\Flat File Source"
           TopLeft="338.749994952232,56.5499989888072" />
         <EdgeLayout
@@ -5544,20 +5544,138 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
+    design-time-name="Package\PublicHealthUnit_Ontario to Stage">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        <NodeLayout
+          Size="172,42.6666666666667"
+          Id="Package\PublicHealthUnit_Ontario to Stage\OLE DB Destination"
+          TopLeft="318.124995259568,179.399996792078" />
+        <NodeLayout
+          Size="157.333333333334,42.6666666666667"
+          Id="Package\PublicHealthUnit_Ontario to Stage\Data Conversion"
+          TopLeft="181.166666666667,82.6666666666667" />
+        <NodeLayout
+          Size="139.333333333334,42.6666666666667"
+          Id="Package\PublicHealthUnit_Ontario to Stage\Excel Source"
+          TopLeft="402.666666666667,44.1666666666667" />
+        <EdgeLayout
+          Id="Package\PublicHealthUnit_Ontario to Stage.Paths[Excel Source Output]"
+          TopLeft="402.666666666667,65.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-64.1666666666667,38.5"
+              Start="0,0"
+              End="-56.6666666666667,38.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-28.0833333333334,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-28.0833333333334,0"
+                    Point2="-32.0833333333334,0"
+                    Point3="-32.0833333333334,4" />
+                  <mssgle:LineSegment
+                    End="-32.0833333333334,34.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-32.0833333333334,34.5"
+                    Point2="-32.0833333333334,38.5"
+                    Point3="-36.0833333333334,38.5" />
+                  <mssgle:LineSegment
+                    End="-56.6666666666667,38.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\PublicHealthUnit_Ontario to Stage.Paths[Data Conversion Output]"
+          TopLeft="259.833333333333,125.333333333333">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="144.291661926235,54.0666634587447"
+              Start="0,0"
+              End="144.291661926235,46.5666634587447">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,23.0333317293723" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,23.0333317293723"
+                    Point2="0,27.0333317293723"
+                    Point3="4,27.0333317293723" />
+                  <mssgle:LineSegment
+                    End="140.291661926235,27.0333317293723" />
+                  <mssgle:CubicBezierSegment
+                    Point1="140.291661926235,27.0333317293723"
+                    Point2="144.291661926235,27.0333317293723"
+                    Point3="144.291661926235,31.0333317293723" />
+                  <mssgle:LineSegment
+                    End="144.291661926235,46.5666634587447" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <mssgm:EdgeLabel
+              BoundingBox="0,0,0,0"
+              RelativePosition="Any" />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\PublicHealthUnit_Ontario to Stage\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\PublicHealthUnit_Ontario to Stage\Excel Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
     design-time-name="Package\PHUGroups to Stage">
     <LayoutInfo>
       <GraphLayout
         Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="138.666666666667,42.6666666666667"
+          Size="139,43"
           Id="Package\PHUGroups to Stage\Excel Source"
           TopLeft="402.666666666667,44.1666666666667" />
         <NodeLayout
-          Size="157.333333333334,42.6666666666667"
+          Size="157,43"
           Id="Package\PHUGroups to Stage\Data Conversion"
           TopLeft="408,146" />
         <NodeLayout
-          Size="172,42.6666666666667"
+          Size="172,43"
           Id="Package\PHUGroups to Stage\OLE DB Destination"
           TopLeft="379.124995259568,338.399996792078" />
         <EdgeLayout
@@ -5658,124 +5776,10 @@
     </Properties>
   </PipelineComponentMetadata>
   <TaskHost
-    design-time-name="Package\PublicHealthUnit_Ontario to Stage">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="172,42.6666666666667"
-          Id="Package\PublicHealthUnit_Ontario to Stage\OLE DB Destination"
-          TopLeft="318.124995259568,179.399996792078" />
-        <NodeLayout
-          Size="157.333333333334,42.6666666666667"
-          Id="Package\PublicHealthUnit_Ontario to Stage\Data Conversion"
-          TopLeft="181.166666666667,82.6666666666667" />
-        <NodeLayout
-          Size="139.333333333334,42.6666666666667"
-          Id="Package\PublicHealthUnit_Ontario to Stage\Excel Source"
-          TopLeft="402.666666666667,44.1666666666667" />
-        <EdgeLayout
-          Id="Package\PublicHealthUnit_Ontario to Stage.Paths[Excel Source Output]"
-          TopLeft="402.666666666667,65.5">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-64.1666666666667,38.5"
-              Start="0,0"
-              End="-56.6666666666667,38.5">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-28.0833333333334,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-28.0833333333334,0"
-                    Point2="-32.0833333333334,0"
-                    Point3="-32.0833333333334,4" />
-                  <mssgle:LineSegment
-                    End="-32.0833333333334,34.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-32.0833333333334,34.5"
-                    Point2="-32.0833333333334,38.5"
-                    Point3="-36.0833333333334,38.5" />
-                  <mssgle:LineSegment
-                    End="-56.6666666666667,38.5" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\PublicHealthUnit_Ontario to Stage.Paths[Data Conversion Output]"
-          TopLeft="259.833333333333,125.333333333333">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="144.291661926235,54.0666634587447"
-              Start="0,0"
-              End="144.291661926235,46.5666634587447">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,23.0333317293723" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,23.0333317293723"
-                    Point2="0,27.0333317293723"
-                    Point3="4,27.0333317293723" />
-                  <mssgle:LineSegment
-                    End="140.291661926235,27.0333317293723" />
-                  <mssgle:CubicBezierSegment
-                    Point1="140.291661926235,27.0333317293723"
-                    Point2="144.291661926235,27.0333317293723"
-                    Point3="144.291661926235,31.0333317293723" />
-                  <mssgle:LineSegment
-                    End="144.291661926235,46.5666634587447" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\PublicHealthUnit_Ontario to Stage\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\PublicHealthUnit_Ontario to Stage\Excel Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
     design-time-name="Package\VaccinesByAge to Stage">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="172,43"
           Id="Package\VaccinesByAge to Stage\OLE DB Destination"
@@ -5815,9 +5819,7 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
+            <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>

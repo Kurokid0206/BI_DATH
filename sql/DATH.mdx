@@ -1,0 +1,29 @@
+﻿---Câu 1
+select {[Measures].[Active Count], [Measures].[Deceased Count]} on columns,
+[Dim Public Health Unit].[PHU].[PHU] on rows
+from [Covid Cases DDS];
+---Câu 2 - Do không có quý, dùng tháng
+select [Dim Severity].[Severity Key].[Severity Key] on columns,
+{[Dim Date].[Year Key].[Year Key] * [Dim Date].[Month Key].[Month Key] * [Dim Public Health Unit].[PHU].[PHU]} on rows
+from [Covid Cases DDS];
+---Câu 3 
+select {[Dim Gender].[Gender Name].[Gender Name] * [Measures].[Deceased Count]} on columns,
+{[Dim Date].[Year Key].[Year Key] * [Dim Age Group].[Age Group Detail].[Age Group Detail]} on rows
+from [Covid Cases DDS];
+---Câu 4
+select [Measures].[Case Count] on columns,
+{[Dim Date].[Day Key].[Day Key]*[Dim Severity].[Severity Key].[Severity Key]} on rows
+from [Covid Cases DDS];
+---Câu 5
+---Ca nhiễm theo Năm * PHU City * Severity
+select [Measures].[Case Count] on columns,
+{[Dim Date].[Year Key].[Year Key]*[Dim Public Health Unit].[PHU City].[PHU City]*[Dim Severity].[Severity Key].[Severity Key]} on rows
+from [Covid Cases DDS];
+---Số người tiêm vaccine theo Năm * PHU City
+select [Measures].[Vaccinated Count] on columns,
+{[Dim Date].[Year Key].[Year Key]*[Dim Public Health Unit].[PHU City].Members} on rows
+from [Covid Cases DDS];
+---Câu 6 -Do không liên kết được Case với Outbreak nên chỉ thống kê theo PHU City * Severity
+select [Measures].[Case Count] on columns,
+{[Dim Public Health Unit].[PHU City].[PHU City]*[Dim Severity].[Severity Key].[Severity Key]} on rows
+from [Covid Cases DDS];
